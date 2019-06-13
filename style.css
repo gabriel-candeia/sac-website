@@ -44,6 +44,7 @@ nav{
   display: flex;
   text-decoration: none;
   color: rgb(253, 177, 34);
+  transition: background-color 0.3s ease-in-out;
   align-items: center;
   justify-content: flex-end;
   padding: 8px 16px; 
@@ -139,6 +140,7 @@ nav{
   background-color: rgba(0,0,0,0);
   letter-spacing: 0.25em;
   font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .home button:hover{
