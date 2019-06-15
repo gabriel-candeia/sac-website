@@ -44,7 +44,7 @@ nav{
   display: flex;
   text-decoration: none;
   color: rgb(253, 177, 34);
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
   align-items: center;
   justify-content: flex-end;
   padding: 8px 16px; 
@@ -142,11 +142,12 @@ nav{
   background-color: rgba(0,0,0,0);
   letter-spacing: 0.25em;
   font-weight: bold;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 .home button:hover{
   background-color: #fff;
+  transition: background-color 0.3s ease;
   color: orange;
 }
 
@@ -155,16 +156,47 @@ nav{
 /* Footer */
 
 footer{
-  height: 30vh;
+  padding: 50px;
   display: grid;
   color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   background-color: rgb(85, 85, 85);
-  padding: 30px 50px;
+  margin: 15px 0px;
 }
 
+
+
+footer div h4{
+  padding-bottom: 5px;
+}
+
+footer img{
+  padding-top: 10px;
+  display: block;
+  max-width: 90%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+footer img:hover{
+  transform: scale(1.1,1.1);
+  transition: all 0.3s ease;
+}
+
+.Apoio{
+  display: flex;
+}
 
 footer li{
   list-style-type: none;
+  font-size: 0.85em;
+  padding-top: 5px;
+
 }
+
+.fab, .fas, .far{
+  color: lightseagreen;
+  padding-right: 5px;
+}
+
