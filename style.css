@@ -8,29 +8,27 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-/* Navbar versão desktop */
-
 header{
   position: sticky;
-  top: 0;
-
+  top:0;
+  box-shadow: 5px 5px 4px rgba(0,0,0,0.2);
+  background-color: rgb(240,240,240);
 }
 
 nav{
-  background-color: rgb(240,240,240);
-  box-shadow: 5px 5px 4px rgba(0,0,0,0.2);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
-    "logo nav-menu";
-  justify-content:space-between;
-  align-items: stretch; 
+    "logo toggle"
+    "nav-menu nav-menu";
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-menu{
   list-style: none;
-  grid-area: nav-menu;
+  /* grid-area: nav-menu; */
   text-align: center;
 }
 
@@ -200,3 +198,84 @@ footer li{
   padding-right: 5px;
 }
 
+  .workshops {
+    display: grid;
+    grid-template-rows: auto 120px auto auto auto auto;
+    border: 3px;
+    background-color: #1fc9bb;
+    grid-gap: 20px;
+  }
+
+  .item {
+    display: grid;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .circles {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .circles-items {
+    width: 120px;
+    height: 120px;
+    background: rgb(253, 177, 34);
+    border-radius: 50%;
+    text-align: center;
+    justify-self: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+
+  .names, .title-class {
+    display:  flex;
+    justify-content:  space-around;
+    color:  white;
+  }
+
+  .names li{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: .5s ease;
+    list-style: none;
+    max-width: 150px;
+
+  }
+
+  .circles-items:hover {
+    opacity: 0.3;
+  }
+
+  .division {
+    width: 400px;
+    height: 1px;
+    grid-row-start: 5;
+    border-bottom: 3px solid #000;
+    border-color: white;
+    border-radius: 25px;
+    justify-self: center;
+  }
+
+  .title-class {
+    font-size:  40px;
+    text-align:   center; 
+  }
+
+  .description {
+    grid-row-start: 6;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+  }
+
+  .description p{
+    visibility: visible;
+  }
