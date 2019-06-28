@@ -1,0 +1,132 @@
+* { 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Home page */
+.home{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background: url('img/placeHolder.jpeg') no-repeat rgb(0,92,158);
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+.titulo{
+  margin-top: auto;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  padding: 8px 16px;
+}
+
+.subtitulo{
+  font-size: 2em;
+  color: white;
+  padding: 8px 16px;
+}
+
+.home button{
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: auto;
+  padding: 8px 40px;
+  border:  #fff 1px solid;
+  background-color: rgba(0,0,0,0);
+  letter-spacing: 0.25em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home button:hover{
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  color: orange;
+}
+
+/* Fim Home page */
+
+/* Workshops */
+
+.workshops {
+  background-color: #1fc9bb;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.workshops h2, .workshops h3 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.workshops-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+  text-align: center;
+  color: #fff;
+
+  margin: 20px 0;
+}
+
+.workshops-items section {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: rgb(253, 177, 34);
+}
+
+.workshops-items p {
+  width: 150px;
+}
+
+.circles-items {
+  width: 120px;
+  height: 120px;
+  background: rgb(253, 177, 34);
+  border-radius: 50%;
+  text-align: center;
+  justify-self: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.names li{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  transition: .5s ease;
+  list-style: none;
+  max-width: 150px;
+}
+
+.division {
+  width: 400px;
+  margin: 0 auto;
+  border-bottom: 3px solid #fff;
+  border-radius: 25px;
+}
+
+.description {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+/* Fim Workshops */

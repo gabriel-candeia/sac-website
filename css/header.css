@@ -1,0 +1,95 @@
+header{
+  position: sticky;
+  top: 0;
+
+}
+
+nav{
+  background-color: rgb(240,240,240);
+  box-shadow: 5px 5px 4px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "logo nav-menu";
+  justify-content:space-between;
+  align-items: stretch; 
+}
+
+.nav-menu{
+  list-style: none;
+  grid-area: nav-menu;
+  text-align: center;
+}
+
+.nav-menu, .nav-menu li{
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.nav-menu li a{
+  display: flex;
+  text-decoration: none;
+  color: rgb(253, 177, 34);
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 16px; 
+}
+
+.nav-menu a:hover{
+  background-color: rgb(253, 177, 34);
+  color: white;
+}
+
+.logo{
+  padding: 8px 16px;
+}
+
+.toggle-icon{
+  display: none;
+}
+
+/* Navbar responsiva */
+
+@media screen and (max-width: 700px){
+  .nav-menu{
+    display: none;
+  }
+
+  .toggle-icon{
+    display: block;
+  }
+
+  .active{
+    display: block;
+  }
+
+  nav{
+    grid-template-areas:
+    "logo toggle"
+    "nav-menu nav-menu";
+    align-items: center;
+  }
+
+
+  .toggle-icon{
+    padding: 8px 16px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+
+  .nav-menu, .nav-menu li{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-menu li a{
+    justify-content: center;
+  }
+
+}
+
+/* Fim navbar */

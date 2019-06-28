@@ -14,14 +14,15 @@
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 	<!-- CSS -->
-	<link href="style.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/header.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
 	<header>
-		<nav>
-			<img class="logo" src="logo-site-xiv.png" />
+		<nav class="navbar-sac">
+			<img class="logo" src="img/logo-site-xiv.png" />
 			<span class="toggle-icon" id="js-toggle-icon">
 				<i class="fas fa-bars"></i>
 			</span>
@@ -36,42 +37,44 @@
 
 	<div class="home">
 		<p class="titulo">XIV Semana Acadêmica da Computação</p>
-		<p class="subtitulo">13 A 17 DE AGOSTO DE 2019</p>
+		<p class="subtitulo">12 A 16 DE AGOSTO DE 2019</p>
 		<button type="button">INSCREVA-SE</button>
 	</div>
 
-	<div class="workshops">
-		<div class="item">workshops</div>
-		<div class="circles" id="test">
-			<div class="circles-items" id="c1"></div>
-			<div class="circles-items" id="c2"></div>
-			<div class="circles-items" id="c3"></div>
-			<div class="circles-items" id="c4"></div>
-		</div>
-		<ul class="names">
-			<li>Teaching in Lab Settings: First Day and Beyond</li>
-			<li>Teaching Modern Languages: First Day and Beyond</li>
-			<li>Teaching 1:1 in Office Hours and Study Centers</li>
-			<li>Teaching SS/HUM* Quiz Sections: First Day and Beyond</li>
+	<section class="workshops">
+		<h2>workshops</h2>
+		<ul class="workshops-list">
+			<li class="workshops-items">
+				<section></section>
+				<p>Teaching in Lab Settings: First Day and Beyond</p>
+			</li>
+			<li class="workshops-items">
+				<section></section>
+				<p>Teaching Modern Languages: First Day and Beyond</p>
+			</li>
+			<li class="workshops-items">
+				<section></section>
+				<p>Teaching 1:1 in Office Hours and Study Centers</p>
+			</li>
+			<li class="workshops-items">
+				<section></section>
+				<p>Teaching SS/HUM* Quiz Sections: First Day and Beyond</p>
+			</li>
 		</ul>
 		<div class="division"></div>
-		<div class="title-class">
-			<p id="title">Lorem ipsum.</p>
-		</div>
-		<div class="description">
-			<p id="ws">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-				dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-				pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-				laborum.</p>
-		</div>
-
-	</div>
+		<h3 id="title">Lorem ipsum.</h3>
+		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			labore et
+			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+			laborum.</p>
+	</section>
 
 	<footer>
 		<div>
 			<h4>Realização</h4>
-			<img class="PET-LOGO" src="logo-pet.png" />
+			<img class="PET-LOGO" src="img/footer/logo-pet.png" />
 		</div>
 
 		<div>
@@ -97,13 +100,13 @@
 		<div>
 			<h4>Apoio Institucional</h4>
 			<div class="Apoio">
-				<img src="logo-dc.png" />
-				<img src="logo-ufc.png">
+				<img src="img/footer/logo-dc.png" />
+				<img src="img/footer/logo-ufc.png">
 			</div>
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
