@@ -6,7 +6,7 @@ footer{
   padding: 50px;
   display: grid;
   color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
   column-gap: 10px;
   background-color: rgb(85, 85, 85);
   margin: 15px 0 0;
@@ -35,14 +35,43 @@ footer img:hover{
   display: flex;
 }
 
-footer li{
+.linksSocial li{
   list-style-type: none;
   font-size: 0.85em;
   padding-top: 5px;
+}
 
+.linksSocial a{
+  text-decoration: none;
+  color: white;
+}
+
+.linksSocial a:hover{
+  text-decoration: underline;
 }
 
 .fab, .fas, .far{
   color: lightseagreen;
   padding-right: 5px;
+}
+
+@media screen and (max-width: 1000px){
+  footer{
+    grid-template-columns:1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+  footer{
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    padding: 20px;
+  }
+
+  footer img{
+    max-width: 60%;
+  }
 }
