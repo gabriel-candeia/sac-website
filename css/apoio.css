@@ -1,0 +1,30 @@
+.patrocinio{
+    display: grid;
+    padding: 20px;
+    margin: 15px 0px;
+    background-color: #eeeeee;
+
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+    
+}
+
+.patrocinio h1{
+    border-bottom: 5px solid cyan;
+}
+
+.patrocinio div{
+    display: flex;
+    justify-content: center;
+}
+
+.patrocinio img{
+    display: block;
+    max-width: 10%;
+    height: auto;
+    padding: 20px;
+}
+
+
+
