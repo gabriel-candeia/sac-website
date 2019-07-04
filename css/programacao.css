@@ -1,0 +1,53 @@
+
+.programacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5em;
+    width: 50vw;
+    border: 0.1em solid orange;
+}
+
+.palestras {
+    grid-row-gap: 0.5em;
+    padding: 5px;
+}
+
+.palestras > div{
+    border: 0.1em solid orange;
+    background-color: orange;
+    color: white;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.dias > div {
+    text-align: center;
+}
+
+#palestras-segunda {
+    display: grid;
+}
+
+#palestras-terca {
+    display: none;
+}
+
+#palestras-quarta {
+    display: none;
+}
+
+#palestras-quinta {
+    display: none;
+}
+
+#palestras-sexta {
+    display: none;
+}
+
+.dia:hover {
+    background-color: orange;
+    color: white;
+}
