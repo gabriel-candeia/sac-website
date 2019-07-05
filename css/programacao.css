@@ -10,12 +10,12 @@
     border: 0.1em solid orange;
     border-top: none;
 }
-.palestras {
+.prog_palestras {
     grid-row-gap: 0.5em;
     padding: 8px;
 }
 
-.palestras > div{
+.prog_palestras > div{
     border: 0.1em solid orange;
     background-color: orange;
     color: white;
