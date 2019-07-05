@@ -136,7 +136,7 @@ body{
 
 .palestras {
   display: grid;
-  grid-template-rows: auto 800px;
+  grid-template-rows: auto auto;
   background-color: #000000;
 }
 
@@ -144,48 +144,11 @@ body{
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   color: white;
-  grid-gap: 10px;
   list-style: none;
+  grid-gap: 20px;
+
+  /* grid-gap: 10px;*/
 }
-
-/* Orange */
-.rectangles-items-orange {
-  background-color: rgb(253, 177, 34);
-  opacity: 0.7;
-  grid-template-rows: 50px auto;
-  text-align: center;
-
-}
-
-.rectangles-items-orange > div {
-    right: 40%;
-    grid-row-start: 1;
-  }
-
-.rectangles-items-orange:hover {
-    opacity: 1;
-    transition: .5s ease;
-  }
-
-/* Blue */
-.rectangles-items-blue {
-  background-color: #1fc9bb;
-  opacity: 0.7;
-  grid-template-rows: 50px auto;
-  text-align: center;
-}
-
-.rectangles-items-blue > div {
-    position: absolute;
-    right: 40%;
-    grid-row-start: 1;
-  }
-
-.rectangles-items-blue:hover {
-    opacity: 1;
-    transition: .5s ease;
-  }
-
 
 .nome-palestras {
   display: grid;
@@ -194,6 +157,65 @@ body{
   color: white;
   vertical-align: middle;
   grid-row-start: 1;
+}
+
+/* Orange */
+.rectangles-items-orange {
+  display: grid;
+  grid-template-columns: 50px 515px auto;
+  grid-template-rows: auto 430px auto auto;
+  background-color: #1fc9bb;
+  opacity: 0.7;
+  text-align: center;
+  /* grey: #D3D3D3 */
+}
+
+.rectangles-items-orange > div {
+  background-color: rgb(253, 177, 34);
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  }
+
+.rectangles-items-orange > h1 {
+  display: flex;
+  font-size: 2.7em;
+  position: relative;
+  top: 20%;
+}
+
+.rectangles-items-orange > p {
+  display: grid;
+  right: 40%;
+  font-size: 1.9em;
+  margin-top: 10px;
+  background-color: #2361CC;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  text-align: left;
+
+  /*darker-blue: #2361CC;*/
+  /*standard-blue: #1fc9bb;*/
+  }
+
+
+.rectangles-items-orange:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+/* Blue */
+
+/* Imagens Palestrantes */
+
+.imagem-palestrantes {
+  display: flex;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
 }
 
 /* Fim Palestras */
