@@ -9,6 +9,11 @@ body{
   font-size: 16px;
 }
 
+p{
+    font-weight: 200;
+    color: #333333;
+}
+
 header{
     padding: 20px;
     display:grid;
@@ -44,9 +49,23 @@ header{
 
 }
 
+.content h2{
+    margin: 10px 0px;
+    border-bottom: 5px solid #00a5a5;
+}
+
 .side{
     grid-area: side;
     padding: 10px 20px;
+}
+
+.side a{
+    text-decoration:none;
+    font-size: 1.25em;
+    margin: 8px 0px;
+    padding: 8px 16px;
+    background-color: #00a5a5;
+    color: white;
 }
 
 .main{
@@ -58,10 +77,6 @@ section{
     display: grid;
     justify-items: start;
 
-}
-
-section h2{
-    border-bottom: 5px solid cyan;
 }
 
 section p{
@@ -107,7 +122,6 @@ footer{
 }
 
 
-
 footer a{
     font-size: 1.5em;
     padding: 7px 50px;
@@ -122,3 +136,5 @@ footer a:hover{
     transform:scale(1.1,1.1);
     background-color: orange;
 }
+
+
