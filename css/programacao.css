@@ -1,3 +1,10 @@
+#secao_programacao {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .programacao {
     display: grid;
     grid-template-columns: 1fr;
