@@ -7,6 +7,7 @@ let c2 = document.getElementById('c2');
 let c3 = document.getElementById('c3');
 let c4 = document.getElementById('c4');
 let title = document.getElementById('title')
+let r1 = document.getElementById('r1')
 	
 navBarToggle.addEventListener('click', function () {
     
@@ -18,6 +19,7 @@ c2.addEventListener('mouseover', show2);
 c3.addEventListener('mouseover', show3);
 c4.addEventListener('mouseover', show4);
 
+r1
 
 function show1() {
 	ws.innerHTML = "Promote student learning in your math, science, and engineering lab settings from day one. This workshop identifies goals for lab instruction, ways to plan and facilitate effective lab sessions, and strategies for a successful first day of lab class.";
