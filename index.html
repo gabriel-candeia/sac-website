@@ -90,53 +90,153 @@
 		</ul>
 	</section>
 
-	<section class="programacao">
-		<div class="dias">
-			<div class="dia" id="Segunda">Segunda-feira (12)</div>
-			<div class="dia" id="Terca">Terça-Feira (13)</div>
-			<div class="dia" id="Quarta">Quarta-Feira (14)</div>
-			<div class="dia" id="Quinta">Quinta-Feira (15)</div>
-			<div class="dia" id="Sexta">Sexta-Feira (16)</div>
-		</div>
+    <section id="secao_programacao">
+        <div class="programacao">
+            <div class="dias">
+                <div class="dia" id="Segunda" onClick="cronogramaDia('Segunda','palestras-segunda')">Segunda-feira (12)</div>
+                <div class="dia" id="Terca" onClick="cronogramaDia('Terca', 'palestras-terca')">Terça-Feira (13)</div>
+                <div class="dia" id="Quarta" onClick="cronogramaDia('Quarta', 'palestras-quarta')">Quarta-Feira (14)</div>
+                <div class="dia" id="Quinta" onClick="cronogramaDia('Quinta', 'palestras-quinta')">Quinta-Feira (15)</div>
+                <div class="dia" id="Sexta" onClick="cronogramaDia('Sexta', 'palestras-sexta')">Sexta-Feira (16)</div>
+            </div>
 
-		<div class="div_palestras">
-			<div class = "prog_palestras" id="palestras-segunda">
-				<div>Seg-Palestra1</div>
-				<div>Seg-Palestra2</div>
-				<div>Seg-Palestra3</div>
-				<div>Seg-Palestra4</div>
-			</div>
+            <div class="div_palestras">
+                <div class = "prog_palestras" id="palestras-segunda">
+                    <div class="palestra" onClick="descricaoPalestra('seg1')">Seg-Palestra1</div>
+                    <div class="palestra" onClick="descricaoPalestra('seg2')">Seg-Palestra2</div>
+                    <div class="palestra" onClick="descricaoPalestra('seg3')">Seg-Palestra3</div>
+                    <div class="palestra" onClick="descricaoPalestra('seg4')">Seg-Palestra4</div>
+                </div>
 
-			<div class = "prog_palestras" id="palestras-terca">
-				<div>Ter-Palestra1</div>
-				<div>Ter-Palestra2</div>
-				<div>Ter-Palestra3</div>
-				<div>Ter-Palestra4</div>
-			</div>
+                <div class = "prog_palestras" id="palestras-terca">
+                    <div class="palestra" onClick="descricaoPalestra('ter1')">Ter-Palestra1</div>
+                    <div class="palestra" onClick="descricaoPalestra('ter2')">Ter-Palestra2</div>
+                    <div class="palestra" onClick="descricaoPalestra('ter3')">Ter-Palestra3</div>
+                    <div class="palestra" onClick="descricaoPalestra('ter4')">Ter-Palestra4</div>
+                </div>
 
-			<div class = "prog_palestras" id="palestras-quarta">
-				<div>Qua-Palestra1</div>
-				<div>Qua-Palestra2</div>
-				<div>Qua-Palestra3</div>
-				<div>Qua-Palestra4</div>
-			</div>
+                <div class = "prog_palestras" id="palestras-quarta">
+                    <div class="palestra" onClick="descricaoPalestra('qua1')">Qua-Palestra1</div>
+                    <div class="palestra" onClick="descricaoPalestra('qua2')">Qua-Palestra2</div>
+                    <div class="palestra" onClick="descricaoPalestra('qua3')">Qua-Palestra3</div>
+                    <div class="palestra" onClick="descricaoPalestra('qua4')">Qua-Palestra4</div>
+                </div>
 
-			<div class = "prog_palestras" id="palestras-quinta">
-				<div>Qui-Palestra1</div>
-				<div>Qui-Palestra2</div>
-				<div>Qui-Palestra3</div>
-				<div>Qui-Palestra4</div>
-			</div>
+                <div class = "prog_palestras" id="palestras-quinta">
+                    <div>Feriado de alguma coisa aí</div>
+                </div>
 
-			<div class = "prog_palestras" id="palestras-sexta">
-				<div>Sex-Palestra1</div>
-				<div>Sex-Palestra2</div>
-				<div>Sex-Palestra3</div>
-				<div>Sex-Palestra4</div>
-			</div>
-		</div>
-		
-	</section>
+                <div class = "prog_palestras" id="palestras-sexta">
+                    <div class="palestra" onClick="descricaoPalestra('sex1')">Sex-Palestra1</div>
+                    <div class="palestra" onClick="descricaoPalestra('sex2')">Sex-Palestra2</div>
+                    <div class="palestra" onClick="descricaoPalestra('sex3')">Sex-Palestra3</div>
+                    <div class="palestra" onClick="descricaoPalestra('sex4')">Sex-Palestra4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="modal-close" onClick="document.getElementById('myModal').style.display='none'">&times;</span>
+            
+            <div class="modal-palestras" id="seg1">
+                <p><strong>Palestra:</strong>Seg-Palestra1</p>
+                <p><strong>Palestrante:</strong>Seg-Palestrante1</p>
+                <p><strong>Descrição:</strong>Seg-Descrição1</p>
+            </div>
+            
+            <div class="modal-palestras" id ="seg2">
+                <p><strong>Palestra:</strong>Seg-Palestra2</p>
+                <p><strong>Palestrante:</strong>Seg-Palestrante2</p>
+                <p><strong>Descrição:</strong>Seg-Descrição2</p>
+            </div> 
+
+            <div class="modal-palestras" id ="seg3">
+                <p><strong>Palestra:</strong>Seg-Palestra3</p>
+                <p><strong>Palestrante:</strong>Seg-Palestrante3</p>
+                <p><strong>Descrição:</strong>Seg-Descrição3</p>
+            </div> 
+
+            <div class="modal-palestras" id ="seg4">
+                <p><strong>Palestra:</strong>Seg-Palestra4</p>
+                <p><strong>Palestrante:</strong>Seg-Palestrante4</p>
+                <p><strong>Descrição:</strong>Seg-Descrição4</p>
+            </div> 
+
+            <div class="modal-palestras" id="ter1">
+                <p><strong>Palestra:</strong>Ter-Palestra1</p>
+                <p><strong>Palestrante:</strong>Ter-Palestrante1</p>
+                <p><strong>Descrição:</strong>Ter-Descrição1</p>
+            </div>
+            
+            <div class="modal-palestras" id ="ter2">
+                <p><strong>Palestra:</strong>Ter-Palestra2</p>
+                <p><strong>Palestrante:</strong>Ter-Palestrante2</p>
+                <p><strong>Descrição:</strong>Ter-Descrição2</p>
+            </div> 
+
+            <div class="modal-palestras" id ="ter3">
+                <p><strong>Palestra:</strong>Ter-Palestra3</p>
+                <p><strong>Palestrante:</strong>Ter-Palestrante3</p>
+                <p><strong>Descrição:</strong>Ter-Descrição3</p>
+            </div> 
+
+            <div class="modal-palestras" id ="ter4">
+                <p><strong>Palestra:</strong>Ter-Palestra4</p>
+                <p><strong>Palestrante:</strong>Ter-Palestrante4</p>
+                <p><strong>Descrição:</strong>Ter-Descrição4</p>
+            </div> 
+
+            <div class="modal-palestras" id="qua1">
+                <p><strong>Palestra:</strong>Qua-Palestra1</p>
+                <p><strong>Palestrante:</strong>Qua-Palestrante1</p>
+                <p><strong>Descrição:</strong>Qua-Descrição1</p>
+            </div>
+            
+            <div class="modal-palestras" id ="qua2">
+                <p><strong>Palestra:</strong>Qua-Palestra2</p>
+                <p><strong>Palestrante:</strong>Qua-Palestrante2</p>
+                <p><strong>Descrição:</strong>Qua-Descrição2</p>
+            </div> 
+
+            <div class="modal-palestras" id ="qua3">
+                <p><strong>Palestra:</strong>Qua-Palestra3</p>
+                <p><strong>Palestrante:</strong>Qua-Palestrante3</p>
+                <p><strong>Descrição:</strong>Qua-Descrição3</p>
+            </div> 
+
+            <div class="modal-palestras" id ="qua4">
+                <p><strong>Palestra:</strong>Qua-Palestra4</p>
+                <p><strong>Palestrante:</strong>Qua-Palestrante4</p>
+                <p><strong>Descrição:</strong>Qua-Descrição4</p>
+            </div> 
+
+            <div class="modal-palestras" id="sex1">
+                <p><strong>Palestra:</strong>Sex-Palestra1</p>
+                <p><strong>Palestrante:</strong>Sex-Palestrante1</p>
+                <p><strong>Descrição:</strong>Sex-Descrição1</p>
+            </div>
+            
+            <div class="modal-palestras" id ="sex2">
+                <p><strong>Palestra:</strong>Sex-Palestra2</p>
+                <p><strong>Palestrante:</strong>Sex-Palestrante2</p>
+                <p><strong>Descrição:</strong>Sex-Descrição2</p>
+            </div> 
+
+            <div class="modal-palestras" id ="sex3">
+                <p><strong>Palestra:</strong>Sex-Palestra3</p>
+                <p><strong>Palestrante:</strong>Sex-Palestrante3</p>
+                <p><strong>Descrição:</strong>Sex-Descrição3</p>
+            </div> 
+
+            <div class="modal-palestras" id ="sex4">
+                <p><strong>Palestra:</strong>Sex-Palestra4</p>
+                <p><strong>Palestrante:</strong>Sex-Palestrante4</p>
+                <p><strong>Descrição:</strong>Sex-Descrição4</p>
+            </div> 
+        </div>
+    </div>
 
 	<footer>
 		<div>

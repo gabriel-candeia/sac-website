@@ -1,116 +1,30 @@
-let seg = document.getElementById('Segunda');
-seg.addEventListener('click', mondayTable);
+//Função para mostrar o cronograma de cada dia
 
-let ter = document.getElementById('Terca');
-ter.addEventListener('click', tuesdayTable);
+function cronogramaDia(diaValue, palestra_dia) {
+    var i, x, y;
+    x = document.getElementsByClassName('prog_palestras');
+    y = document.getElementsByClassName('dia');
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
 
-let qua = document.getElementById('Quarta');
-qua.addEventListener('click', wednesdayTable);
-
-let qui = document.getElementById('Quinta');
-qui.addEventListener('click', thursdayTable);
-
-let sex = document.getElementById('Sexta');
-sex.addEventListener('click', fridayTable);
-
-
-
-function mondayTable() {
-    seg.style.border = '0.1em solid orange';
-    ter.style.border = 'none';
-    qua.style.border = 'none';
-    qui.style.border = 'none';
-    sex.style.border = 'none';
-
-    seg.style.borderBottom = 'none';
-    ter.style.borderBottom = '0.1em solid orange';
-    qua.style.borderBottom = '0.1em solid orange';
-    qui.style.borderBottom = '0.1em solid orange';
-    sex.style.borderBottom = '0.1em solid orange';
-
-    document.getElementById('palestras-segunda').style.display = 'grid';
-    document.getElementById('palestras-terca').style.display = 'none';
-    document.getElementById('palestras-quarta').style.display = 'none';
-    document.getElementById('palestras-quinta').style.display = 'none';
-    document.getElementById('palestras-sexta').style.display = 'none';
+    for (i = 0; i < y.length; i++) {
+        y[i].style.border = 'none';
+        y[i].style.borderBottom = '0.1em solid orange';
+    }
+    document.getElementById(diaValue).style.border = '0.1em solid orange';
+    document.getElementById(diaValue).style.borderBottom = 'none';
+    document.getElementById(palestra_dia).style.display = 'grid';
 }
 
-function tuesdayTable() {
-    seg.style.border = 'none';
-    ter.style.border = '0.1em solid orange';
-    qua.style.border = 'none';
-    qui.style.border = 'none';
-    sex.style.border = 'none';
+//Modal
+function descricaoPalestra(id) {
+    var x, i;
+    x = document.getElementsByClassName('modal-palestras');
 
-    seg.style.borderBottom = '0.1em solid orange';
-    ter.style.borderBottom = 'none';
-    qua.style.borderBottom = '0.1em solid orange';
-    qui.style.borderBottom = '0.1em solid orange';
-    sex.style.borderBottom = '0.1em solid orange';
-
-    document.getElementById('palestras-segunda').style.display = 'none';
-    document.getElementById('palestras-terca').style.display = 'grid';
-    document.getElementById('palestras-quarta').style.display = 'none';
-    document.getElementById('palestras-quinta').style.display = 'none';
-    document.getElementById('palestras-sexta').style.display = 'none';
-}
-
-function wednesdayTable() {
-    seg.style.border = 'none';
-    ter.style.border = 'none';
-    qua.style.border = '0.1em solid orange';
-    qui.style.border = 'none';
-    sex.style.border = 'none';
-    
-    seg.style.borderBottom = '0.1em solid orange';
-    ter.style.borderBottom = '0.1em solid orange';
-    qua.style.borderBottom = 'none';
-    qui.style.borderBottom = '0.1em solid orange';
-    sex.style.borderBottom = '0.1em solid orange';
-
-    document.getElementById('palestras-segunda').style.display = 'none';
-    document.getElementById('palestras-terca').style.display = 'none';
-    document.getElementById('palestras-quarta').style.display = 'grid';
-    document.getElementById('palestras-quinta').style.display = 'none';
-    document.getElementById('palestras-sexta').style.display = 'none';
-}
-
-function thursdayTable() {
-    seg.style.border = 'none';
-    ter.style.border = 'none';
-    qua.style.border = 'none';
-    qui.style.border = '0.1em solid orange';
-    sex.style.border = 'none';
-
-    seg.style.borderBottom = '0.1em solid orange';
-    ter.style.borderBottom = '0.1em solid orange';
-    qua.style.borderBottom = '0.1em solid orange';
-    qui.style.borderBottom = 'none';
-    sex.style.borderBottom = '0.1em solid orange';
-
-    document.getElementById('palestras-segunda').style.display = 'none';
-    document.getElementById('palestras-terca').style.display = 'none';
-    document.getElementById('palestras-quarta').style.display = 'none';
-    document.getElementById('palestras-quinta').style.display = 'grid';
-    document.getElementById('palestras-sexta').style.display = 'none';
-}
-
-function fridayTable() {
-    seg.style.border = 'none';
-    ter.style.border = 'none';
-    qua.style.border = 'none';
-    qui.style.border = 'none';
-    sex.style.border = '0.1em solid orange';
-
-    seg.style.borderBottom = '0.1em solid orange';
-    ter.style.borderBottom = '0.1em solid orange';
-    qua.style.borderBottom = '0.1em solid orange';
-    qui.style.borderBottom = '0.1em solid orange';
-    sex.style.borderBottom = 'none';
-
-    document.getElementById('palestras-segunda').style.display = 'none';
-    document.getElementById('palestras-terca').style.display = 'none';
-    document.getElementById('palestras-quarta').style.display = 'none';
-    document.getElementById('palestras-quinta').style.display = 'none';
-    document.getElementById('palestras-sexta').style.display = 'grid';
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+    document.getElementById('myModal').style.display = 'block';
+    document.getElementById(id).style.display = 'block';
 }
