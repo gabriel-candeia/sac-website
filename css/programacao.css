@@ -42,7 +42,6 @@
     border: 0.1em solid orange;
     border-bottom: none;
 }
-
 #Terca, #Quarta, #Quinta, #Sexta {
     border-bottom: 0.1em solid orange;
 }
@@ -50,3 +49,4 @@
     background-color: orange;
     color: white;
 }
+
