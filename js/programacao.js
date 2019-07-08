@@ -17,7 +17,7 @@ function cronogramaDia(diaValue, palestra_dia) {
     document.getElementById(palestra_dia).style.display = 'grid';
 }
 
-//Modal
+//Função para Modal
 function descricaoPalestra(id) {
     var x, i;
     x = document.getElementsByClassName('modal-palestras');
