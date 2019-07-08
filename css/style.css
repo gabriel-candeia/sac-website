@@ -61,6 +61,7 @@ body{
   background-color: #1fc9bb;
   text-align: center;
   padding: 20px 0;
+  height: 500px;
 }
 
 .workshops h2, .workshops h3 {
@@ -115,7 +116,7 @@ body{
 
 .division {
   width: 400px;
-  margin: 0 auto;
+  margin: 20px auto;
   border-bottom: 3px solid #fff;
   border-radius: 25px;
 }
