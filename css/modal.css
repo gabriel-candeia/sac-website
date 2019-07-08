@@ -1,0 +1,33 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    padding: 10px;
+    overflow: auto;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+    z-index: 1;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .modal-palestras {
+    display: none;
+  }
