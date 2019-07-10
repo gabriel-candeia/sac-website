@@ -16,7 +16,7 @@ body{
   flex-direction: column;
   align-items: center;
   
-  background: url('img/placeHolder.jpeg') no-repeat rgb(0,92,158);
+  background: url('placeHolder.jpeg') no-repeat rgb(0,92,158);
   background-blend-mode: overlay;
   background-size: 100% 100%;
 }
@@ -58,7 +58,14 @@ body{
 /* Workshops */
 
 .workshops {
-  background-color: #1fc9bb;
+  background:
+    -webkit-linear-gradient(315deg, hsla(35, 95%, 55%, 1) 0%, hsla(35, 95%, 55%, 0) 70%),
+    -webkit-linear-gradient(135deg, hsla(225, 95%, 50%, 1) 15%, hsla(225, 95%, 50%, 0) 80%),
+    -webkit-linear-gradient(205deg, hsla(340, 100%, 55%, 1) 100%, hsla(340, 100%, 55%, 0) 70%);
+  background:
+    linear-gradient(135deg, hsla(35, 95%, 55%, 1) 0%, hsla(35, 95%, 55%, 0) 70%),
+    linear-gradient(315deg, hsla(225, 95%, 50%, 1) 15%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(245deg, hsla(340, 100%, 55%, 1) 100%, hsla(340, 100%, 55%, 0) 70%);
   text-align: center;
   padding: 20px 0;
   height: 500px;
@@ -78,7 +85,7 @@ body{
   text-align: center;
   color: #fff;
 
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
 .workshops-items section {
@@ -87,22 +94,25 @@ body{
   margin: 0 auto 20px;
   border-radius: 50%;
   background-color: rgb(253, 177, 34);
+  background: url('computer.svg') rgb(253, 177, 34) no-repeat;
+  background-size: 70%;
+  background-position: center;
+  transition: width 2s, height 2s ease
 }
+
+.workshops-items section:hover {
+  width: 150px;
+  height: 150px;
+  transition: width 1.5s, height 1.5s ease;
+}
+
+/*p { opacity: 1; transition: all 0.5s; }
+p.hide { opacity: 0; } */
+
 
 .workshops-items p {
   width: 150px;
-}
-
-.circles-items {
-  width: 120px;
-  height: 120px;
-  background: rgb(253, 177, 34);
-  border-radius: 50%;
-  text-align: center;
-  justify-self: center;
-  vertical-align: middle;
-  cursor: pointer;
-  transition: .5s ease;
+  transition: all 0.5s;
 }
 
 .names li{
@@ -138,7 +148,10 @@ body{
 .palestras {
   display: grid;
   grid-template-rows: auto auto;
-  background-color: #000000;
+  background: url('toppers.jpg') no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rectangles {
@@ -146,7 +159,6 @@ body{
   grid-template-rows: auto auto auto auto auto auto;
   color: white;
   list-style: none;
-  grid-gap: 20px;
 
   /* grid-gap: 10px;*/
 }
@@ -165,10 +177,16 @@ body{
   display: grid;
   grid-template-columns: 3% auto auto;
   grid-template-rows: auto 230px auto auto;
-  background-color: #1fc9bb;
-  opacity: 0.7;
+  /*background-color: #1fc9bb;*/
+  background: rgb(2,2,110);
+  background: linear-gradient(90deg, rgba(2,2,110,1) 10%, rgba(42,23,153,1) 36%, rgba(126,0,104,1) 65%, rgba(253,177,34,1) 100%);
+  opacity: 0.6;
   text-align: center;
   grid-column-gap: 5%;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
   /* grey: #D3D3D3 */
 }
 
@@ -179,9 +197,6 @@ body{
   grid-row-end: 3;
 }
 
-.rectangles-items-orange > div:hover {
-  background-color: rgb(253, 177, 34);
-}
 
 .rectangles-items-orange > h1 {
   display: flex;
@@ -207,10 +222,8 @@ body{
   /*standard-blue: #1fc9bb;*/
   }
 
-
 .rectangles-items-orange:hover {
   opacity: 1;
-  transition: .5s ease;
 }
 
 /* Blue */
@@ -242,4 +255,23 @@ standard-blue: #1fc9bb;
 darker-blue: #2361CC;
 grey: #D3D3D3
 
+gradient: darkblue->pink->orange;
+background: rgb(6,67,249);
+background: linear-gradient(90deg, rgba(6,67,249,1) 0%, rgba(255,26,102,0.9640231092436975) 48%, rgba(249,158,31,1) 100%);
+
+gradient : dark blue->light blue;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
 */
+
+.colorful {
+  background:
+    -webkit-linear-gradient(315deg, hsla(35, 95%, 55%, 1) 0%, hsla(35, 95%, 55%, 0) 70%),
+    -webkit-linear-gradient(135deg, hsla(225, 95%, 50%, 1) 15%, hsla(225, 95%, 50%, 0) 80%),
+    -webkit-linear-gradient(205deg, hsla(340, 100%, 55%, 1) 100%, hsla(340, 100%, 55%, 0) 70%);
+  background:
+    linear-gradient(135deg, hsla(35, 95%, 55%, 1) 0%, hsla(35, 95%, 55%, 0) 70%),
+    linear-gradient(315deg, hsla(225, 95%, 50%, 1) 15%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(245deg, hsla(340, 100%, 55%, 1) 100%, hsla(340, 100%, 55%, 0) 70%);
+  }
