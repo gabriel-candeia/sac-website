@@ -6,7 +6,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p{
@@ -16,10 +16,10 @@ p{
 
 header{
     padding: 20px;
+    
     display:grid;
     grid-template-areas: "title nav";
     justify-content: space-between;
-
     background-color: #dddddd;
     box-shadow: 0 3px 4px rgba(0,0,0,0.2);
 }
@@ -100,14 +100,14 @@ section p{
 }
 
 .imagens{
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px;
 }
 
 .imagens div{
-    border: 1px dashed black;
-    margin: 10px;
+    border: 1px dashed rgb(66, 66, 66);
+    margin: 8px;
     text-align: center;
 }
 
@@ -118,21 +118,20 @@ section p{
 
 .imagens div img{
     margin: 10px;
-    max-width: 30%;
-    height: auto;
+    max-height: 20vh;
+    width: auto;
 }
 
 .imagens div p{
-    margin: 0px 50px;
-    word-spacing: 0.25em;
-    line-height: 1.25em;
+    text-align: center; 
+    margin: 0 25%;
 }
 
 
 .subs{
     display: flex;
     justify-content: space-around; 
-    height: 10vh;
+    height: 60px;
     background-color: #00a5a5;
 }
 
@@ -145,11 +144,41 @@ section p{
     border-radius: 15px;
     text-decoration: none;
     align-self: center;
+    transition: all .3s ease-in-out;
 }
 
 .subs a:hover{
-    transform:scale(1.1,1.1);
-    background-color: orange;
+    background-color: white;
+    color: #00a5a5;
+    
+}
+
+@media screen and (max-width: 900px){
+    header{
+        justify-content: center;
+        text-align: center;
+        grid-template-areas: 
+        "title"
+        "nav";
+    }
+    
+    .side{
+        display: none;
+    }
+
+    .content{
+        grid-template-areas: "main main";
+    }
+
+    .imagens{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagens div img{
+        max-height: 10vh;
+        width:auto;
+    }
 }
 
 
