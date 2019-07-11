@@ -1,0 +1,36 @@
+#Sobre {
+    display: grid;
+    padding: 10px;
+}
+
+#Sobre > h1 {
+    display: flex;
+    border-bottom: 0.3em solid #1FC9BB;
+}
+
+#icones {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.borda-circular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1em solid #1FC9BB;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+svg {
+    padding: 5px;
+    width: 5vw;
+    height: 5vh;
+    color: #1FC9BB;
+    
+}
