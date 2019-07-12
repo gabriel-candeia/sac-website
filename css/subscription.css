@@ -7,11 +7,18 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  
 }
 
 p{
     font-weight: 400;
-    color: #333333;
+    color: #555555;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 300; 
+    color: #555555;
 }
 
 header{
@@ -49,6 +56,12 @@ header{
     text-decoration: underline;
 }
 
+.content{
+    display: grid;
+    grid-template-areas: "main side";
+    grid-template-columns: 2.5fr 1fr;
+}
+
 .content h2{
     margin: 10px 0px;
     border-bottom: 5px solid #00a5a5;
@@ -83,10 +96,16 @@ header{
     padding: 10px 36px;
 }
 
-.content{
-    display: grid;
-    grid-template-areas: "main side";
-    grid-template-columns: 2.5fr 1fr;
+
+.main a{
+    color:#00a5a5;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.main a:hover{
+    color:#017777;
+    text-decoration: underline;
 }
 
 section{
@@ -154,6 +173,14 @@ section p{
 }
 
 @media screen and (max-width: 900px){
+    body{
+        font-size: 12px;
+    }
+
+    h3{
+        font-size: 1.4em;
+    }
+    
     header{
         justify-content: center;
         text-align: center;
