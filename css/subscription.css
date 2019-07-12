@@ -203,7 +203,8 @@ section p{
     }
 
     .imagens div img{
-        max-height: 10vh;
+        max-height: 80px;
+        min-height: 10vh;
         width:auto;
     }
 }
