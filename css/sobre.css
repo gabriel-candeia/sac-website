@@ -1,6 +1,8 @@
 #Sobre {
     display: grid;
-    padding: 10px;
+    justify-items: start;
+    padding: 16px;
+    row-gap: 16px;
 }
 
 #Sobre > h1 {
