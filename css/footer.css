@@ -9,10 +9,7 @@ footer{
   grid-template-columns: 1fr 1fr 1fr 2fr;
   column-gap: 10px;
   background-color: rgb(85, 85, 85);
-  margin: 15px 0 0;
 }
-
-
 
 footer div h4{
   padding-bottom: 5px;
