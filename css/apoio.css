@@ -21,9 +21,15 @@
 
 .patrocinio img{
     display: block;
-    max-width: 10%;
-    height: auto;
+    max-height: 15vh;
+    width: auto;
     margin: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .patrocinio img{
+        max-height: 10vh;
+    }
 }
 
 
