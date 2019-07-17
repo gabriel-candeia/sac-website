@@ -2,9 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     font-family: "Open Sans", sans-serif;
-    /* background-color: #80808062; */
 }
 
 .sobre_classe > p {
@@ -43,6 +41,19 @@
     margin-left: auto;
 }
 
+.iconeComLegenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6vw;
+}
+
+.legenda {
+    margin-top: 1vh;
+    text-align: center;
+    color: #1FC9BB;
+    font-weight: 700;
+}
 .borda-circular {
     display: flex;
     flex-direction: column;
@@ -54,11 +65,23 @@
     height: 70px;
 }
 
-.icones {
-    font-size: 2em;
-    text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
+.svg-inline--fa {
+    color: #1FC9BB;
+}
+
+.fa-calendar-alt {
+    width: 2vw;
+    height: 10vh;
+}
+
+.fa-clock {
+    width: 2.5vw;
+    height: 10vh;
+}
+
+.fa-map {
+    width: 2.5vw;
+    height: 10vh;
 }
 
 #frase_colorida {
