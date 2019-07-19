@@ -1,33 +1,52 @@
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0,0,0,0.4); 
+} 
 
-.modal-content {
-    padding: 10px;
-    overflow: auto;
-    position: absolute;
-    top: 40vh;
-    left: 40vw;
-    z-index: 1;
-    border-radius: 3px;
-    background-color: #fff;
-  }
+.bloco_modal {
+  width: 30vw;
+  height: 30vh;
+  display: grid;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+#modal_header {
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1FC9BB;
+  display: flex;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#event_type {
+  position: absolute;
+  left: 0.5em;
+}
 
 .modal-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-  }
+  position: absolute;
+  right: 0.5em;
+  cursor: pointer;
+}
 
-  .modal-palestras {
-    display: none;
-  }
+#secoes_modal {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4vh;
+  margin: 0;
+  border-bottom: 0.1em solid #1FC9BB;
+}

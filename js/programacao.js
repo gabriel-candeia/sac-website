@@ -18,13 +18,21 @@ function cronogramaDia(diaValue, palestra_dia) {
 }
 
 //Função para Modal
-function descricaoPalestra(id) {
-    var x, i;
+function descricaoPalestra(type,id) {
+    var x, y, i, palestra;
     x = document.getElementsByClassName('modal-palestras');
+    y = document.getElementById('event_type');
+    palestra = document.getElementById(id);
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = 'none';
     }
-    document.getElementById('myModal').style.display = 'block';
-    document.getElementById(id).style.display = 'block';
+    document.getElementById('myModal').style.display = 'flex';
+    document.getElementById('myModal').style.justifyContent = 'center';
+    document.getElementById('myModal').style.alignItems = 'center';
+    palestra.style.display = 'block';
+
+
+    y.innerHTML = type.toUpperCase();
+
 }
