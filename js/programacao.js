@@ -27,12 +27,18 @@ function descricaoPalestra(type,id) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = 'none';
     }
-    document.getElementById('myModal').style.display = 'flex';
-    document.getElementById('myModal').style.justifyContent = 'center';
-    document.getElementById('myModal').style.alignItems = 'center';
+    document.getElementById('my_modal').style.display = 'flex';
+    // document.getElementById('myModal').style.justifyContent = 'center';
+    // document.getElementById('myModal').style.alignItems = 'center';
     palestra.style.display = 'block';
 
 
     y.innerHTML = type.toUpperCase();
 
 }
+
+const modalCloseBtn = document.getElementById('modal-close');
+modalCloseBtn.addEventListener('click', () => {
+    const modal = document.getElementById('my_modal');
+    modal.style.display = 'none';
+});
