@@ -18,9 +18,10 @@ function cronogramaDia(diaValue, palestra_dia) {
 }
 
 //Função para Modal
+
 function descricaoPalestra(type,id) {
     var x, y, i, palestra;
-    x = document.getElementsByClassName('modal-palestras');
+    x = document.getElementsByClassName('modal_palestras');
     y = document.getElementById('event_type');
     palestra = document.getElementById(id);
 
@@ -28,17 +29,27 @@ function descricaoPalestra(type,id) {
         x[i].style.display = 'none';
     }
     document.getElementById('my_modal').style.display = 'flex';
-    // document.getElementById('myModal').style.justifyContent = 'center';
-    // document.getElementById('myModal').style.alignItems = 'center';
     palestra.style.display = 'block';
 
-
-    y.innerHTML = type.toUpperCase();
-
+    y.innerHTML = type.toUpperCase(); 
+    
 }
 
-const modalCloseBtn = document.getElementById('modal-close');
+const modalCloseBtn = document.getElementById('modal_close');
 modalCloseBtn.addEventListener('click', () => {
     const modal = document.getElementById('my_modal');
     modal.style.display = 'none';
 });
+
+
+// function mostrarSecao(classe) {
+//     var i;
+    
+//     for (i = 0; i < x.children.lenght; i++) {
+//         if (x.children[i].className === classe) {
+//             x.children[i].style.display = 'block';
+//         } else {
+//             x.children[i].style.display = 'none';
+//         }
+//     }
+// }

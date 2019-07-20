@@ -47,17 +47,26 @@
   padding: 0 10px;
 }
 
-#secoes_modal {
+#modal_close {
+  cursor: pointer;
+}
+
+#modal_secoes {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0;
   border-bottom: 0.1em solid #1FC9BB;
+}
+
+.modal_secao:hover {
+  color: #1FC9BB;
+  cursor: pointer;
 }
 
 #modal_content {
