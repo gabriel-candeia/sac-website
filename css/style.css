@@ -148,3 +148,91 @@ body{
     margin: 16px 20%;
   }
 }
+
+.itens{
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0px;
+  padding: 8px 0px; 
+
+  background: #dcdde1;
+
+}
+
+.itens img{
+  max-height: 50vh;
+  width: auto;
+  align-self: center;
+}
+
+
+
+.itens h1{
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  border-bottom: solid cyan;
+  color:black;
+  font-size: 2em;
+  margin: 8px 0px;
+}
+
+.imagens{
+  display: flex;
+}
+
+.blue-bg, .orange-bg {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  transition: .25s ease;
+}
+
+.orange-bg{
+  border-left: solid #fff;
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.blue-bg{
+  border-right: solid #fff;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.orange-bg:after {
+  right: 0;
+}
+.blue-bg:hover {
+  width: 70%;
+}
+.blue-bg:hover + .blue-bg {
+  width: 30%;
+}
+.orange-bg:hover {
+  width: 70%;
+}
+.orange-bg:hover + .blue-bg {
+  width: 30%;
+}
+
+.brindes{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.brindes img{
+  max-height: 15vh;
+  margin: 10px;
+  filter: saturate(20%);
+  transition: all .3s ease-out;
+}
+
+.brindes img:hover{
+  filter: saturate(100%);
+}
