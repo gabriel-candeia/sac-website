@@ -11,8 +11,9 @@
   width: 100vw; 
   height: 100vh;
 
-
   background-color: rgba(0,0,0,0.4); 
+
+  font-family: "Open Sans", sans-serif;
 } 
 
 .bloco_modal {
@@ -20,11 +21,10 @@
   height: 350px;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr;
   grid-template-rows: 50px 50px 1fr;
   z-index: 1;
-  border-radius: 3px;
-  background-color: #fff;
+  border-radius: 6px;
 }
 
 #modal_header {
@@ -37,13 +37,14 @@
   justify-content: space-between;
   align-items: center;
 
-  background-color: #1FC9BB;
+  border-radius: 6px 6px 0 0;
+  background-color: #fdb122;
   color: white;
   font-size: 1.1em;
   font-weight: 600;
 }
 
-#secoes_modal, #modal_content, #modal_header {
+#secoes_modal, #modal_header, .informacao_palestra, .modal_secao_header {
   padding: 0 10px;
 }
 
@@ -52,29 +53,35 @@
 }
 
 #modal_secoes {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-  display: inline-flex;
+  display: flex;
+  flex-direction: column; 
   justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  border-bottom: 0.1em solid #1FC9BB;
+  height: 300px;
+  background-color: white;
+  border-radius: 0 0 6px 6px;
 }
 
-.modal_secao:hover {
-  color: #1FC9BB;
-  cursor: pointer;
+.modal_secao {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.modal_secao_header {
+  color: #fdb122;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.informacao_palestra {
+  font-family:
 }
 
 #modal_content {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-
-  justify-self: center;
-  align-self: center;
+  display: none;
 }
