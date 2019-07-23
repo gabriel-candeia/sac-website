@@ -24,14 +24,20 @@ function descricaoPalestra(type,id) {
     x = document.getElementsByClassName('modal_palestras');
     y = document.getElementById('event_type');
     palestra = document.getElementById(id);
+    informacao = document.getElementsByClassName('informacao_palestra');
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = 'none';
     }
+
     document.getElementById('my_modal').style.display = 'flex';
     palestra.style.display = 'block';
 
     y.innerHTML = type.toUpperCase(); 
+
+    for (i = 0; i < 4; i++) {
+        informacao[i].innerHTML = palestra.children[i].textContent;
+    }
     
 }
 
@@ -41,15 +47,9 @@ modalCloseBtn.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
-
-// function mostrarSecao(classe) {
-//     var i;
-    
-//     for (i = 0; i < x.children.lenght; i++) {
-//         if (x.children[i].className === classe) {
-//             x.children[i].style.display = 'block';
-//         } else {
-//             x.children[i].style.display = 'none';
-//         }
-//     }
-// }
+modal = document.getElementById('my_modal');
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
