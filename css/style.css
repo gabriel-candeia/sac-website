@@ -58,7 +58,7 @@ body{
 /* Workshops */
 
 .workshops {
-  background: #2361CC;
+  background: #005C9E;
   text-align: center;
   height: 500px;
 }
@@ -186,8 +186,7 @@ body{
   display: grid;
   grid-template-columns: 3% 350px auto;
   grid-template-rows: auto;
-
-  background: #2361CC;
+  background: #005C9E;
   opacity: 0.6;
   text-align: center;
   transition: all .2s ease-in-out;
@@ -294,7 +293,7 @@ body{
 
 orange = #FDB122 / #fa7c30
 darker-orange: #fa7c30;
-standard-blue: #1fc9bb;
+standard-blue: #1fc9bb / #005C9E;
 darker-blue: #2361CC;
 grey: #D3D3D3;
 

@@ -11,12 +11,8 @@ let r1 = document.getElementById('r1')
 
 let lista_item_selected = 0
 
-if 
 
-
-	
-navBarToggle.addEventListener('click', function () {
-    
+navBarToggle.addEventListener('click', function () {    
     mainNav.classList.toggle('active');
 });
 
