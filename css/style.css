@@ -6,6 +6,7 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 /* Home page */
@@ -15,6 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;  
   
   background: url('img/placeHolder.jpeg') no-repeat rgb(0,92,158);
   background-blend-mode: overlay;
@@ -22,23 +24,24 @@ body{
 }
 
 .titulo{
-  margin-top: auto;
-  text-align: center;
   font-size: 3em;
+  word-spacing: 0.08em;
+  text-transform: uppercase; 
+  text-align: center;
   color: white;
-  padding: 8px 16px;
+  
 }
 
 .subtitulo{
   font-size: 2em;
+  text-align: center;
   color: white;
   padding: 8px 16px;
 }
 
-.home button{
+.home a{
   font-size: 1em;
   color: #fff;
-  margin-bottom: auto;
   padding: 8px 40px;
   border:  #fff 1px solid;
   background-color: rgba(0,0,0,0);
@@ -47,7 +50,7 @@ body{
   transition: background-color 0.3s ease;
 }
 
-.home button:hover{
+.home a:hover{
   background-color: #fff;
   transition: background-color 0.3s ease;
   color: orange;
@@ -197,3 +200,108 @@ body{
 }
 
 /* Fim Palestras */
+@media screen and (max-width: 600px){
+  body{
+    font-size: 12px;
+  }
+
+  .titulo{
+    margin: 0px 20%;  
+  }
+
+  .subtitulo{
+    padding: 0;
+    margin: 16px 20%;
+  }
+}
+
+/* Inicio dos itens da SAC*/
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px; 
+
+  background: #eeeeee;
+
+}
+
+.itens h1{
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  border-bottom: solid cyan;
+  color:black;
+  font-size: 2em;
+  margin: 8px 0px;
+}
+
+.imagens img{
+  max-height: 50vh;
+  width: auto;
+  align-self: center;
+  transition: all .5s ease-in-out;
+}
+
+.imagens img:hover{
+  filter: brightness(150%);
+}
+
+.imagens{
+  display: flex;
+}
+
+.blue-bg, .orange-bg {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  transition: .25s ease;
+}
+
+.orange-bg{
+  border-left: solid #fff;
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.blue-bg{
+  border-right: solid #fff;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.orange-bg:after {
+  right: 0;
+}
+.blue-bg:hover {
+  width: 70%;
+}
+.blue-bg:hover + .blue-bg {
+  width: 30%;
+}
+.orange-bg:hover {
+  width: 70%;
+}
+.orange-bg:hover + .blue-bg {
+  width: 30%;
+}
+
+.brindes{
+  display: flex;
+  justify-content: center;
+} 
+
+.brindes img{
+  max-height: 15vh;
+  margin: 10px;
+  filter: saturate(20%);  
+  transition: all .3s ease-out;
+}
+
+.brindes img:hover{
+  filter: saturate(100%);
+}
+
+/*Fim do Itens da SAC*/

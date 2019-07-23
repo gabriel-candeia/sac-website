@@ -19,10 +19,10 @@
 }
 
 .sobre_classe > h1 {
-    display: flex;
     border-bottom: 0.2em solid #1FC9BB;
     font-size: 2em;
-    margin-top: 1vh;
+    margin: 10px 0 50px;
+    justify-self: center;
 }
 
 .sobre_classe > h2 {
@@ -88,4 +88,5 @@
     color: #1FC9BB;
     font-size: 1.35em;
     font-weight: 700;
+    text-align: center;
 }

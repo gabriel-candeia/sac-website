@@ -1,7 +1,7 @@
 header{
   position: sticky;
   top: 0;
-
+  z-index: 2;
 }
 
 nav{
@@ -13,7 +13,7 @@ nav{
   grid-template-areas:
     "logo nav-menu";
   justify-content:space-between;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .nav-menu{
@@ -31,6 +31,7 @@ nav{
 .nav-menu li a{
   display: flex;
   text-decoration: none;
+  font-weight: bold;
   color: rgb(253, 177, 34);
   transition: background-color 0.3s ease;
   align-items: center;
