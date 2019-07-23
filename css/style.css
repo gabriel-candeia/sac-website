@@ -149,23 +149,17 @@ body{
   }
 }
 
+/* Inicio dos itens da SAC*/
+
 .itens{
   display: flex;
   flex-direction: column;
   margin: 16px 0px;
   padding: 8px 0px; 
 
-  background: #dcdde1;
+  background: #eeeeee;
 
 }
-
-.itens img{
-  max-height: 50vh;
-  width: auto;
-  align-self: center;
-}
-
-
 
 .itens h1{
   justify-self: center;
@@ -175,6 +169,17 @@ body{
   color:black;
   font-size: 2em;
   margin: 8px 0px;
+}
+
+.imagens img{
+  max-height: 50vh;
+  width: auto;
+  align-self: center;
+  transition: all .5s ease-in-out;
+}
+
+.imagens img:hover{
+  filter: brightness(150%);
 }
 
 .imagens{
@@ -192,8 +197,7 @@ body{
   border-left: solid #fff;
   background: #FDC830;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 .blue-bg{
@@ -201,7 +205,6 @@ body{
   background: #00B4DB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .orange-bg:after {
@@ -235,3 +238,5 @@ body{
 .brindes img:hover{
   filter: saturate(100%);
 }
+
+/*Fim do Itens da SAC*/
