@@ -18,7 +18,7 @@ body{
   align-items: center;
   justify-content: center;  
   
-  background: url('img/placeHolder.jpeg') no-repeat rgb(0,92,158);
+  background: url('placeHolder.jpeg') no-repeat rgb(0,92,158);
   background-blend-mode: overlay;
   background-size: 100% 100%;
 }
@@ -58,162 +58,146 @@ body{
 
 /* Fim Home page */
 
-/* Workshops */
-
-.workshops {
-  background-color: #1fc9bb;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.workshops h2, .workshops h3 {
-  font-size: 2.5em;
-  color: #fff;
-}
-
-.workshops-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  list-style: none;
-  text-align: center;
-  color: #fff;
-
-  margin: 20px 0;
-}
-
-.workshops-items section {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  background-color: rgb(253, 177, 34);
-}
-
-.workshops-items p {
-  width: 150px;
-}
-
-.circles-items {
-  width: 120px;
-  height: 120px;
-  background: rgb(253, 177, 34);
-  border-radius: 50%;
-  text-align: center;
-  justify-self: center;
-  vertical-align: middle;
-  cursor: pointer;
-  transition: .5s ease;
-}
-
-.names li{
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  transition: .5s ease;
-  list-style: none;
-  max-width: 150px;
-}
-
-.division {
-  width: 400px;
-  margin: 0 auto;
-  border-bottom: 3px solid #fff;
-  border-radius: 25px;
-}
-
-.description {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 20px;
-}
-
-/* Fim Workshops */
-
-
 /* Começo Palestras */
 
 .palestras {
   display: grid;
-  grid-template-rows: auto 800px;
-  background-color: #000000;
+  grid-template-rows: auto auto;
+  background-color: #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rectangles {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   color: white;
-  grid-gap: 10px;
   list-style: none;
+  /* grid-row-gap: .5%; */
+
+  grid-gap: 2px;
 }
 
-/* Orange */
-.rectangles-items-orange {
-  background-color: rgb(253, 177, 34);
-  opacity: 0.7;
-  grid-template-rows: 50px auto;
-  text-align: center;
-
-}
-
-.rectangles-items-orange > div {
-    right: 40%;
-    grid-row-start: 1;
-  }
-
-.rectangles-items-orange:hover {
-    opacity: 1;
-    transition: .5s ease;
-  }
-
-/* Blue */
-.rectangles-items-blue {
-  background-color: #1fc9bb;
-  opacity: 0.7;
-  grid-template-rows: 50px auto;
-  text-align: center;
-}
-
-.rectangles-items-blue > div {
-    position: absolute;
-    right: 40%;
-    grid-row-start: 1;
-  }
-
-.rectangles-items-blue:hover {
-    opacity: 1;
-    transition: .5s ease;
-  }
-
-
-.nome-palestras {
+.nome-palestra {
   display: grid;
   text-align: center;
+  font-family: 'Roboto Condensed';
   font-size: 2.5em;
   color: white;
   vertical-align: middle;
   grid-row-start: 1;
+  background-color: #fdb122;
+  letter-spacing: 8px;
+}
+
+/* Orange */
+.rectangles-items-orange {
+  display: grid;
+  grid-template-columns: 3% 350px auto;
+  grid-template-rows: auto;
+  background: #005C9E;
+  opacity: 0.6;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.rectangles-items-orange > div {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+}
+
+.rectangles-items-orange > section {
+  display: grid;
+  background: linear-gradient(-70deg, #fdb122 30%, rgba(0, 0, 0, 0) 30%), url('img/palestrantes/Lucas Peres.jpg'); /* 15% */
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+}
+
+.rectangles-items-orange > section > h1 {
+  display: flex; /* grid */
+  position: relative;
+  font-size: 2.5em;
+  overflow: hidden;
+  align-self: center;
+  top: 5%;
+  left: 2.5%;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+}
+
+.rectangles-items-orange > section > p {
+  display: flex;
+  position: relative;
+  font-size: 1.7em;
+  overflow: hidden;
+  top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-transition: opacity 0.7s ease-in-out;
+  -moz-transition: opacity 0.7s ease-in-out;
+  -ms-transition: opacity 0.7s ease-in-out;
+  -o-transition: opacity 0.7s ease-in-out;
+}
+
+.rectangles-items-orange:hover {
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 0px 0px 10px #000000;
+  transform: scale(1.1);
+}
+
+.rectangles-items-orange:hover .imagem-palestrantes {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Imagens Palestrantes */
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 15px 10px 0px rgba(0,0,0,0.2);
+    transform: translatey(-10px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+.imagem-palestrantes {
+  display: grid;
+  position: relative;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: 270px;
+  height: 270px;
+  left: 20%;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1%;
+  border-color: rgb(253, 177, 34);
+  margin-top: 3%;
+  margin-bottom: 3%;
+  transition: width 1.5s, height 1.5s ease;
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6)
 }
 
 /* Fim Palestras */
-@media screen and (max-width: 600px){
-  body{
-    font-size: 12px;
-  }
 
-  .titulo{
-    margin: 0px 20%;  
-  }
-
-  .subtitulo{
-    padding: 0;
-    margin: 16px 20%;
-  }
-}
 
 /* Inicio dos itens da SAC*/
 
@@ -278,9 +262,9 @@ body{
 .blue-bg:hover {
   width: 70%;
 }
-.blue-bg:hover + .blue-bg {
+/* .blue-bg:hover + .blue-bg {
   width: 30%;
-}
+} */
 .orange-bg:hover {
   width: 70%;
 }
@@ -305,3 +289,32 @@ body{
 }
 
 /*Fim do Itens da SAC*/
+
+@media screen and (max-width: 600px){
+  body{
+    font-size: 12px;
+  }
+
+  .titulo{
+    margin: 0px 20%;  
+  }
+
+  .subtitulo{
+    padding: 0;
+    margin: 16px 20%;
+  }
+}
+
+/* Colors
+
+orange = #FDB122 / #fa7c30
+darker-orange: #fa7c30;
+standard-blue: #1fc9bb / #005C9E;
+darker-blue: #2361CC;
+grey: #D3D3D3;
+
+gradient : dark blue->light blue;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+*/

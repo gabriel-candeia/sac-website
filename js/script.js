@@ -7,9 +7,12 @@ let c2 = document.getElementById('c2');
 let c3 = document.getElementById('c3');
 let c4 = document.getElementById('c4');
 let title = document.getElementById('title')
-	
-navBarToggle.addEventListener('click', function () {
-    
+let r1 = document.getElementById('r1')
+
+let lista_item_selected = 0
+
+
+navBarToggle.addEventListener('click', function () {    
     mainNav.classList.toggle('active');
 });
 
