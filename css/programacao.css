@@ -23,6 +23,7 @@
 
 .div_palestras {
     grid-row-gap: 0.5em;
+    height: 170px;
     border: 0.1em solid #fdb122;
     border-top: none;
 }
@@ -43,15 +44,15 @@
 }
 
 .dias {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); */
     cursor: pointer;
 }
 
 .dia {
     text-align: center;
     font-weight: 600;
-    padding: 5px 0;
+    padding: 5px 10px;
 }
 
 #palestras-segunda {
@@ -72,5 +73,11 @@
 .dia:hover {
     background-color: #fdb122;
     color: white;
+}
+
+@media (max-width: 865px) {
+    .dias {
+        flex-direction: column;
+    }
 }
 
