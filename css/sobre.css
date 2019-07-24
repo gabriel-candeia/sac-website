@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .sobre_classe > p {
@@ -11,30 +11,31 @@
 .sobre_classe {
     display: grid;
     justify-items: start;
-    padding: 16px;
-    row-gap: 16px;
+    padding: 2em;
+    row-gap: 1.2em;
     text-align: justify;
     margin-left: 13vw;
     margin-right: 13vw;
 }
 
 .sobre_classe > h1 {
-    border-bottom: 0.2em solid #1FC9BB;
+    padding: 0 0 0.1em 0;
+    border-bottom: 0.1em solid #1FC9BB;
     font-size: 2em;
-    margin: 10px 0 50px;
+    margin: 10px 0 16px;
     justify-self: center;
 }
 
 .sobre_classe > h2 {
+    padding: 0 0 0.1em 0;
     margin-top: 2vh; 
-    display: flex;
-    border-bottom: 0.2em solid #1FC9BB;
+    border-bottom: 0.1em solid #1FC9BB;
 }
 
 #icones {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    width: 30vw;
+    width: 40vw;
     display: flex;
     justify-content: space-around;
     margin-right: auto;
@@ -59,10 +60,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.25em solid #1FC9BB;
+    border: 0.2em solid #1FC9BB;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
 .svg-inline--fa {
@@ -70,23 +71,47 @@
 }
 
 .fa-calendar-alt {
-    width: 2vw;
-    height: 10vh;
+    width: 40px;
 }
 
-.fa-clock {
-    width: 2.5vw;
-    height: 10vh;
+.fa-clock, .fa-map {
+    width: 50px;
 }
 
-.fa-map {
-    width: 2.5vw;
-    height: 10vh;
-}
 
 #frase_colorida {
     color: #1FC9BB;
     font-size: 1.35em;
     font-weight: 700;
     text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .sobre_classe > h1, .sobre_classe > h2 {
+        text-align: start;
+    }
+
+    .sobre_classe > h2 {
+        margin-top: 0.5vh;
+    }
+
+    #icones {
+        width: 70vw;
+    }
+    .borda-circular {
+        width: 40px;
+        height: 40px;
+    }
+    .fa-calendar-alt {
+        width: 20px;
+    }
+
+    .fa-clock, .fa-map {
+        width: 25px;
+    }
+
+    .legenda {
+        width: 40px;
+    }
+
 }
