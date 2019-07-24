@@ -5,15 +5,19 @@
     justify-content: space-around;
     align-items: center;
 
-    font-family: "Open Sans", sans-serif;
 }
 
-#titulo_cronograma {
+#secao_programacao h2 {
+    color: #fdb122;
+    border-bottom: 2px solid #fdb122;
+}
+
+/* #titulo_cronograma {
     display: flex;
     border-bottom: 0.2em solid #fdb122;
     font-size: 2em;
     margin-top: 1vh;
-}
+} */
 
 .programacao {
     display: grid;
