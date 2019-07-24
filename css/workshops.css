@@ -1,0 +1,93 @@
+/* Workshops */
+
+.workshops {
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  height: 500px;
+}
+
+.nome-workshop {
+  display: grid;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 2.5em;
+  vertical-align: middle;
+  grid-row-start: 1;
+  letter-spacing: 5px;
+}
+.workshops h2 {
+  font-size: 2.5em;
+  color: #005C9E;
+  background-color: #eeeeee;
+  border-width: 1%;
+  border-color: #fa7c30;
+}
+
+.workshops h3 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.workshops-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.workshops-items section {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: rgb(253, 177, 34);
+  background: url('computer.svg') #FDC830 no-repeat;
+  background-size: 70%;
+  background-position: center;
+  transition: width 2s, height 2s ease;
+}
+
+.workshops-items section:hover {
+  width: 150px;
+  height: 150px;
+  transition: width 1.5s, height 1.5s ease;
+}
+
+
+.workshops-items p {
+  width: 150px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.names li{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  transition: .5s ease;
+  list-style: none;
+  max-width: 150px;
+}
+
+.division {
+  width: 400px;
+  margin: 20px auto;
+  border-bottom: 3px solid #FDC830;
+  border-radius: 25px;
+}
+
+.description {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+/* Fim Workshops */

@@ -1,0 +1,84 @@
+#secao_programacao {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eeeeee;
+    font-family: "Roboto";
+}
+
+#titulo_cronograma {
+    display: flex;
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+    font-size: 2em;
+    margin-top: 1vh;
+}
+
+.programacao {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50vw;
+}
+
+.div_palestras {
+    grid-row-gap: 0.5em;
+    height: 170px;
+    border: 0.1em solid #fdb122;
+    border-top: none;
+}
+
+.prog_palestras {
+    grid-row-gap: 0.5em;
+    padding: 8px;
+}
+
+.prog_palestras > div{
+    border: 0.1em solid #fdb122;
+    background-color: #fdb122;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 2em;
+    text-align: start;
+}
+
+.dias {
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); */
+    cursor: pointer;
+}
+
+.dia {
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+#palestras-segunda {
+    display: grid;
+}
+
+#palestras-terca, #palestras-quarta, #palestras-quinta, #palestras-sexta {
+    display: none;
+}
+
+#Segunda {
+    border: 0.1em solid #fdb122;
+    border-bottom: none;
+}
+#Terca, #Quarta, #Quinta, #Sexta {
+    border-bottom: 0.1em solid #fdb122;
+}
+.dia:hover {
+    background-color: #fdb122;
+    color: white;
+}
+
+@media (max-width: 865px) {
+    .dias {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,36 @@
+.patrocinio{
+    display: grid;
+    padding: 20px;
+    background-color: #eeeeee;
+
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+    
+}
+
+.patrocinio h1{
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+}
+
+.patrocinio div{
+    display: flex;
+    justify-content: center;
+}
+
+.patrocinio img{
+    display: block;
+    max-height: 15vh;
+    width: auto;
+    margin: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .patrocinio img{
+        max-height: 10vh;
+    }
+}
+
+
+

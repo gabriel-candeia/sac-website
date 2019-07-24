@@ -1,0 +1,95 @@
+#Sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    background-color: #eeeeee;
+}
+
+.sobre_classe > p {
+    font-size: 1.2em;
+}
+.sobre_classe {
+    display: grid;
+    justify-items: start;
+    padding: 16px;
+    row-gap: 16px;
+    text-align: justify;
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
+.sobre_classe > h1 {
+    font-size: 2.5em;
+    vertical-align: middle;
+    grid-row-start: 1;
+    letter-spacing: 5px;
+    margin: 10px 0 16px;
+    justify-self: center;
+}
+
+.sobre_classe > h2 {
+    margin-top: 2vh; 
+    display: flex;
+    border-bottom: 0.1em solid #1FC9BB;
+}
+
+#icones {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.iconeComLegenda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6vw;
+}
+
+.legenda {
+    margin-top: 1vh;
+    text-align: center;
+    color: #1FC9BB;
+    font-weight: 700;
+}
+.borda-circular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.25em solid #1FC9BB;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.svg-inline--fa {
+    color: #1FC9BB;
+}
+
+.fa-calendar-alt {
+    width: 2vw;
+    height: 10vh;
+}
+
+.fa-clock {
+    width: 2.5vw;
+    height: 10vh;
+}
+
+.fa-map {
+    width: 2.5vw;
+    height: 10vh;
+}
+
+#frase_colorida {
+    color: #005C9E;
+    font-size: 1.35em;
+    font-weight: 700;
+    text-align: center;
+}
