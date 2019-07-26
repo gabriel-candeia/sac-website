@@ -1,16 +1,16 @@
 #secao_programacao {
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 #titulo_cronograma {
     display: flex;
-    border-bottom: 0.2em solid #fdb122;
+    border-bottom: 0.1em solid #fdb122;
     font-size: 2em;
     margin-top: 1vh;
 }
@@ -18,14 +18,16 @@
 .programacao {
     display: grid;
     grid-template-columns: 1fr;
-    width: 50vw;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .div_palestras {
     grid-row-gap: 0.5em;
-    height: 170px;
     border: 0.1em solid #fdb122;
     border-top: none;
+    height: 170px;
 }
 
 .prog_palestras {
@@ -40,19 +42,21 @@
     cursor: pointer;
     padding: 0 10px;
     height: 2em;
-    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .dias {
-    display: flex;
-    /* grid-template-columns: repeat(5, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     cursor: pointer;
 }
 
 .dia {
     text-align: center;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 5px 0;
 }
 
 #palestras-segunda {
@@ -75,9 +79,38 @@
     color: white;
 }
 
-@media (max-width: 865px) {
-    .dias {
-        flex-direction: column;
-    }
+.dias_mobile {
+    display: none;
 }
 
+
+@media screen and (max-width: 600px) {
+    .dias {
+        display: none;
+    }  
+    
+    .div_palestras {
+        border: 0.1em solid #fdb122;
+        margin-top: 10px;
+    }
+
+    .dias_mobile {
+        display: flex;
+        width: 80vw;
+    }
+
+    #dia_selecionado {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        color: #fdb122;
+        border: 0.1em solid #fdb122;
+        padding: 2px;
+        text-align: center;
+        width: 80vw;
+        background: url(../img/seta.jpg) no-repeat #fff;
+        background-position: right center;
+        background-size: 20px;
+        
+    }
+}
