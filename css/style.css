@@ -177,6 +177,11 @@ body{
     padding: 0;
     margin: 16px 20%;
   }
+
+  .brindes img{
+    max-height: 10vh;
+    filter: none;
+  }
 }
 
 /* Colors
