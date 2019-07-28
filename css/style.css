@@ -164,7 +164,7 @@ body{
 
 #mapa{
   height: 400px;
-  margin: 20px 0px;
+  margin: 20px;
 }
 
 /*Fim do Itens da SAC*/
@@ -186,6 +186,10 @@ body{
   .brindes img{
     max-height: 10vh;
     filter: none;
+  }
+
+  #mapa{
+    margin: 20px 0px;
   }
 }
 
