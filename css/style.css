@@ -162,6 +162,11 @@ body{
   filter: saturate(100%);
 }
 
+#mapa{
+  height: 400px;
+  margin: 20px 0px;
+}
+
 /*Fim do Itens da SAC*/
 
 @media screen and (max-width: 600px){
