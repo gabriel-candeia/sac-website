@@ -28,7 +28,7 @@ footer img:hover{
   transition: all 0.3s ease;
 }
 
-.Apoio{
+.Apoio, .Apoio a{
   display: flex;
 }
 
@@ -58,6 +58,13 @@ footer img:hover{
     grid-gap: 20px;
   }
 
+  .Apoio{
+    flex-direction: column;
+  }
+
+  footer img{
+    max-width: 30vw;
+  }
 
 }
 
@@ -68,7 +75,11 @@ footer img:hover{
     padding: 20px;
   }
 
+  .Apoio{
+    flex-direction: row;  
+  }
+
   footer img{
-    max-width: 60%;
+    max-width: 40vw;
   }
 }
