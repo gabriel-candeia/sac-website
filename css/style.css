@@ -94,9 +94,14 @@ body{
   border-bottom: 2px solid #00B4DB;
 }
 
+.imagens h2{
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
 .imagens img{
-  max-height: 50vh;
-  width: auto;
+  max-width: 30vw;
+  height: auto;
   align-self: center;
   transition: all .5s ease-in-out;
 }
@@ -111,20 +116,21 @@ body{
 
 .blue-bg, .orange-bg {
   display: flex;
+  flex-direction: column;
   width: 50%;
   justify-content: center;
   transition: .25s ease;
 }
 
 .orange-bg{
-  border-left: solid #fff;
+  border-left: 0.2px solid #fff;
   background: #FDC830;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 .blue-bg{
-  border-right: solid #fff;
+  border-right: 0.2px solid #fff;
   background: #00B4DB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -169,7 +175,7 @@ body{
 
 /*Fim do Itens da SAC*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
   body{
     font-size: 12px;
   }
@@ -186,6 +192,10 @@ body{
   .brindes img{
     max-height: 10vh;
     filter: none;
+  }
+
+  .imagens img{
+    max-width: 65vw;
   }
 
   #mapa{
