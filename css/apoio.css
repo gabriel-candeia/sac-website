@@ -1,6 +1,5 @@
 .patrocinio{
     display: grid;
-    padding: 20px;
     background: #00B4DB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -26,6 +25,11 @@
     max-height: 15vh;
     width: auto;
     margin: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.patrocinio img:hover{
+    filter: contrast(150%);
 }
 
 @media screen and (max-width: 800px){
