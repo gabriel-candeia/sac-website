@@ -1,5 +1,5 @@
 #secao_programacao {
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -12,22 +12,20 @@
     display: flex;
     border-bottom: 0.1em solid #fdb122;
     font-size: 2em;
-    margin-top: 1vh;
 }
 
 .programacao {
     display: grid;
     grid-template-columns: 1fr;
-    width: 60vw;
+    width: 69vw;
     justify-content: center;
     align-items: center;
 }
 
 .div_palestras {
-    grid-row-gap: 0.5em;
     border: 0.1em solid #fdb122;
     border-top: none;
-    height: 170px;
+    height: 290px;
 }
 
 .prog_palestras {
@@ -56,7 +54,7 @@
 .dia {
     text-align: center;
     font-weight: 600;
-    padding: 5px 0;
+    padding: 6px 0;
 }
 
 #palestras-segunda {
@@ -85,6 +83,10 @@
 
 
 @media screen and (max-width: 600px) {
+    #secao_programacao {
+        justify-content: center;
+    }
+
     .dias {
         display: none;
     }  
@@ -97,6 +99,7 @@
     .dias_mobile {
         display: flex;
         width: 80vw;
+        margin-top: 5vh;
     }
 
     #dia_selecionado {
@@ -111,6 +114,7 @@
         background: url(../img/seta.jpg) no-repeat #fff;
         background-position: right center;
         background-size: 20px;
+        cursor: pointer;
         
     }
 }
