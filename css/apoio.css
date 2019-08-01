@@ -17,6 +17,7 @@
 
 .patrocinio div{
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
 }
 
@@ -40,11 +41,8 @@
 }
 
 @media screen and (max-width: 800px){
-    .patrocinio div{
-        flex-direction: column;
-    }
     .patrocinio img{
-        max-width: 50vw;
+        max-width: 40vw;
     }
 }
 
