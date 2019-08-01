@@ -1,5 +1,5 @@
 #secao_programacao {
-    height: 500px;
+    margin: 2vh 0 7vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -12,6 +12,7 @@
     display: flex;
     border-bottom: 0.1em solid #fdb122;
     font-size: 2em;
+    margin-bottom: 5vh;
 }
 
 .programacao {
@@ -23,9 +24,9 @@
 }
 
 .div_palestras {
+    display: grid;
     border: 0.1em solid #fdb122;
     border-top: none;
-    height: 290px;
 }
 
 .prog_palestras {
@@ -39,7 +40,7 @@
     color: white;
     cursor: pointer;
     padding: 0 10px;
-    height: 2em;
+    height: 3em;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -49,6 +50,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     cursor: pointer;
+    color: #fdb122;
 }
 
 .dia {
@@ -99,7 +101,7 @@
     .dias_mobile {
         display: flex;
         width: 80vw;
-        margin-top: 5vh;
+        margin-top: 10px;
     }
 
     #dia_selecionado {
