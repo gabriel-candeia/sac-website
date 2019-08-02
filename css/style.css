@@ -25,7 +25,7 @@ body{
 /* Home page */
 
 .image{
-  background: url('../img/placeHolder.jpeg') center center no-repeat rgba(0,92,158, 0.5);
+  background: url('../img/Home_Background.png') center center no-repeat rgba(0,92,158, 0.5);
   overflow: hidden; 
   background-size: cover;
 }
@@ -38,7 +38,7 @@ body{
   align-items: center;
   justify-content: center;  
   
-  background: rgba(0, 179, 219, 0.7);
+  background: rgba(0, 179, 219, 0.6);
 }
 
 .titulo{
@@ -114,6 +114,7 @@ body{
 
 .blue-bg, .orange-bg {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   width: 50%;
   justify-content: center;
@@ -206,7 +207,7 @@ body{
   }
 
   .imagens img{
-    max-width: 50vw;
+    max-width: 55vw;
   }
 
   #mapa{
