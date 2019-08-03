@@ -93,8 +93,14 @@ footer img:hover{
     padding: 20px;
   }
 
-  .Apoio{
-    flex-direction: row;  
+  footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .endereco{
+    text-align: center;
   }
 
   footer img{
