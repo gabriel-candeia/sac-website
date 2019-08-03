@@ -37,7 +37,7 @@
 }
 
 .patrocinio img:hover{
-    filter: contrast(200%);
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 800px){
