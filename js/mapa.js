@@ -1,4 +1,4 @@
-var mymap = L.map("mapa").setView([-3.745693, -38.57369], 18);
+let mymap = L.map("mapa", {scrollWheelZoom: false}).setView([-3.745693, -38.57369], 18);
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGllZ29maCIsImEiOiJjanloamdod2gwMDlwM2ZxbHRmOHp3MWphIn0.lGenfWt53QnqOFCaKsLxIw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -6,14 +6,14 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
 
-var markerDC = L.circle([-3.745925, -38.574141],{
+let markerDC = L.circle([-3.745925, -38.574141],{
     color: 'white',
     fillColor: '#1FC9BB',
     fillOpacity: 0.3,
     radius: 40
 } ).addTo(mymap);
 
-var markerCC = L.circle([-3.745500, -38.573277],
+let markerCC = L.circle([-3.745500, -38.573277],
     {
     color: 'white',
     fillColor: 'orange',
@@ -21,12 +21,12 @@ var markerCC = L.circle([-3.745500, -38.573277],
     radius: 32
 } ).addTo(mymap);
 
-var markerAuditorio = L.marker([-3.745636, -38.57317]).addTo(mymap);
-var markerLab = L.marker([-3.745877, -38.573964]).addTo(mymap);
-var markerPET = L.marker([-3.745989, -38.574173]).addTo(mymap);
-var markerAudDC = L.marker([-3.746, -38.574012]).addTo(mymap);
-var markerVGO = L.marker([-3.7454, -38.573272]).addTo(mymap);
-var markerFreePlay = L.marker([-3.745545, -38.573658]).addTo(mymap);
+let markerAuditorio = L.marker([-3.745636, -38.57317]).addTo(mymap);
+let markerLab = L.marker([-3.745877, -38.573964]).addTo(mymap);
+let markerPET = L.marker([-3.745989, -38.574173]).addTo(mymap);
+let markerAudDC = L.marker([-3.746, -38.574012]).addTo(mymap);
+let markerVGO = L.marker([-3.7454, -38.573272]).addTo(mymap);
+let markerFreePlay = L.marker([-3.745545, -38.573658]).addTo(mymap);
  
 markerAuditorio.bindPopup("<b>AUDITORIO DO CENTRO DE CIÊNCIAS</b><br>Aqui ocorrerá a abertura dos evento e as principais palestras.");
 markerLab.bindPopup("<b>LABORATORIOS DE COMPUTAÇÃO</b><br>Aqui ocorrerão os Workshops e Minicursos");
