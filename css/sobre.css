@@ -1,88 +1,117 @@
 #Sobre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
 }
-
-#Sobre h2, #Sobre h3 {
-    color: #00B4DB;
-    border-bottom: 2px solid #00B4DB;
-}
-
-#Sobre h2 { display: inline-block; }
-#Sobre h3 { font-size: 1.4em; }
 
 .sobre_classe > p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .sobre_classe {
-    display: grid;
-    justify-items: start;
-    padding: 16px;
-    row-gap: 16px;
-    text-align: justify;
-    margin-left: 13vw;
-    margin-right: 13vw;
+  display: grid;
+  justify-items: start;
+  padding: 2em;
+  row-gap: 1.2em;
+  text-align: justify;
+  margin-left: 13vw;
+  margin-right: 13vw;
+}
+
+.sobre_classe > h1 {
+  padding: 0 0 0.1em 0;
+  border-bottom: 0.1em solid #00B4DB;
+  font-size: 2em;
+  margin: 10px 0 16px;
+  justify-self: center;
+}
+
+.sobre_classe > h2 {
+  padding: 0 0 0.1em 0;
+  margin-top: 2vh; 
+  border-bottom: 0.1em solid #00B4DB;
 }
 
 #icones {
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    width: 30vw;
-    display: flex;
-    justify-content: space-around;
-    margin-right: auto;
-    margin-left: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 45vw;
+  display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .iconeComLegenda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6vw;
 }
 
 .legenda {
-    margin-top: 1vh;
-    text-align: center;
-    color: #1FC9BB;
-    font-weight: 700;
+  margin-top: 1vh;
+  text-align: center;
+  color: #00B4DB;
+  font-weight: 700;
 }
 .borda-circular {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0.25em solid #1FC9BB;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00B4DB;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
 }
 
 .svg-inline--fa {
-    color: #1FC9BB;
+  color: white;
 }
 
 .fa-calendar-alt {
-    width: 2vw;
-    height: 10vh;
+  width: 40px;
 }
 
-.fa-clock {
-    width: 2.5vw;
-    height: 10vh;
+.fa-clock, .fa-map {
+  width: 50px;
 }
 
-.fa-map {
-    width: 2.5vw;
-    height: 10vh;
-}
 
 #frase_colorida {
-    color: #1FC9BB;
-    font-size: 1.35em;
-    font-weight: 700;
-    text-align: center;
+  color: #00B4DB;
+  font-size: 1.35em;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px){
+  .sobre_classe > h1, .sobre_classe > h2 {
+      text-align: start;
+  }
+
+  .sobre_classe > h2 {
+      margin-top: 0.5vh;
+  }
+
+  #icones {
+      width: 70vw;
+  }
+  .borda-circular {
+      width: 40px;
+      height: 40px;
+  }
+  .fa-calendar-alt {
+      width: 20px;
+  }
+
+  .fa-clock, .fa-map {
+      width: 25px;
+  }
+
+  .legenda {
+      width: 40px;
+  }
+
 }

@@ -1,87 +1,123 @@
 #secao_programacao {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  margin: 2vh 0 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
+  font-family: "Roboto", sans-serif;
 }
 
-#secao_programacao h2 {
-    color: #fdb122;
-    border-bottom: 2px solid #fdb122;
+#titulo_cronograma {
+  display: flex;
+  border-bottom: 0.1em solid #fdb122;
+  font-size: 2em;
+  margin-bottom: 5vh;
 }
-
-/* #titulo_cronograma {
-    display: flex;
-    border-bottom: 0.2em solid #fdb122;
-    font-size: 2em;
-    margin-top: 1vh;
-} */
 
 .programacao {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 69vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .div_palestras {
-    grid-row-gap: 0.5em;
-    height: 170px;
-    border: 0.1em solid #fdb122;
-    border-top: none;
+  display: grid;
+  border: 0.1em solid #fdb122;
+  border-top: none;
 }
 
 .prog_palestras {
-    grid-row-gap: 0.5em;
-    padding: 8px;
+  grid-row-gap: 0.5em;
+  padding: 8px;
 }
 
 .prog_palestras > div{
-    border: 0.1em solid #fdb122;
-    background-color: #fdb122;
-    color: white;
-    cursor: pointer;
-    padding: 0 10px;
-    height: 2em;
-    text-align: start;
+  border: 0.1em solid #fdb122;
+  background-color: #fdb122;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+  height: 3em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .dias {
-    display: flex;
-    /* grid-template-columns: repeat(5, 1fr); */
-    cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  cursor: pointer;
+  color: #fdb122;
 }
 
 .dia {
-    text-align: center;
-    font-weight: 600;
-    padding: 5px 10px;
+  text-align: center;
+  font-weight: 600;
+  padding: 6px 0;
 }
 
 #palestras-segunda {
-    display: grid;
+  display: grid;
 }
 
 #palestras-terca, #palestras-quarta, #palestras-quinta, #palestras-sexta {
-    display: none;
+  display: none;
 }
 
 #Segunda {
-    border: 0.1em solid #fdb122;
-    border-bottom: none;
+  border: 0.1em solid #fdb122;
+  border-bottom: none;
 }
 #Terca, #Quarta, #Quinta, #Sexta {
-    border-bottom: 0.1em solid #fdb122;
+  border-bottom: 0.1em solid #fdb122;
 }
 .dia:hover {
-    background-color: #fdb122;
-    color: white;
+  background-color: #fdb122;
+  color: white;
 }
 
-@media (max-width: 865px) {
-    .dias {
-        flex-direction: column;
-    }
+.dias_mobile {
+  display: none;
 }
 
+
+@media screen and (max-width: 666px) {
+  #secao_programacao {
+      justify-content: center;
+  }
+
+  .dias {
+      display: none;
+  }  
+  
+  .div_palestras {
+      border: 0.1em solid #fdb122;
+      margin-top: 10px;
+  }
+
+  .dias_mobile {
+      display: flex;
+      width: 80vw;
+      margin-top: 10px;
+  }
+
+  #dia_selecionado {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      color: #fdb122;
+      border: 0.1em solid #fdb122;
+      padding: 2px;
+      text-align: center;
+      width: 80vw;
+      height: 40px;
+      background: url(../img/seta.jpg) no-repeat #fff;
+      background-position: right center;
+      background-size: 20px;
+      cursor: pointer;
+      font-size: 14px;
+  }
+}
