@@ -20,7 +20,7 @@
 
 .sobre_classe > h1 {
     padding: 0 0 0.1em 0;
-    border-bottom: 0.1em solid #1FC9BB;
+    border-bottom: 0.1em solid #00B4DB;
     font-size: 2em;
     margin: 10px 0 16px;
     justify-self: center;
@@ -29,13 +29,13 @@
 .sobre_classe > h2 {
     padding: 0 0 0.1em 0;
     margin-top: 2vh; 
-    border-bottom: 0.1em solid #1FC9BB;
+    border-bottom: 0.1em solid #00B4DB;
 }
 
 #icones {
     margin-top: 2vh;
     margin-bottom: 2vh;
-    width: 40vw;
+    width: 45vw;
     display: flex;
     justify-content: space-around;
     margin-right: auto;
@@ -52,7 +52,7 @@
 .legenda {
     margin-top: 1vh;
     text-align: center;
-    color: #1FC9BB;
+    color: #00B4DB;
     font-weight: 700;
 }
 .borda-circular {
@@ -60,14 +60,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.2em solid #1FC9BB;
+    background-color: #00B4DB;
     border-radius: 50%;
     width: 80px;
     height: 80px;
 }
 
 .svg-inline--fa {
-    color: #1FC9BB;
+    color: white;
 }
 
 .fa-calendar-alt {
@@ -80,13 +80,13 @@
 
 
 #frase_colorida {
-    color: #1FC9BB;
+    color: #00B4DB;
     font-size: 1.35em;
     font-weight: 700;
     text-align: center;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     .sobre_classe > h1, .sobre_classe > h2 {
         text-align: start;
     }
