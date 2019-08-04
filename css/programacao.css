@@ -4,17 +4,20 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #eeeeee;
-    font-family: "Roboto";
+
 }
 
-#titulo_cronograma {
+#secao_programacao h2 {
+    color: #fdb122;
+    border-bottom: 2px solid #fdb122;
+}
+
+/* #titulo_cronograma {
     display: flex;
-    font-family: 'Roboto';
-    letter-spacing: 5px;
+    border-bottom: 0.2em solid #fdb122;
     font-size: 2em;
     margin-top: 1vh;
-}
+} */
 
 .programacao {
     display: grid;

@@ -28,8 +28,8 @@ footer img:hover{
   transition: all 0.3s ease;
 }
 
-.Apoio{
-  display: grid;
+.Apoio, .Apoio a{
+  display: flex;
 }
 
 .linksSocial li{
@@ -52,12 +52,37 @@ footer img:hover{
   padding-right: 5px;
 }
 
+.copyright p{
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+  padding: 50px 20px;
+  background: #333;
+}
+
+.copyright a{
+  color: #00B4DB;
+  text-decoration: none;
+}
+
+.copyright a:hover{
+  color: rgb(0, 146, 179);
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1000px){
   footer{
     grid-template-columns:1fr 1fr;
     grid-gap: 20px;
   }
 
+  .Apoio{
+    flex-direction: column;
+  }
+
+  footer img{
+    max-width: 30vw;
+  }
 
 }
 
@@ -68,7 +93,14 @@ footer img:hover{
     padding: 20px;
   }
 
+  .Apoio{
+    flex-direction: row;  
+  }
+
   footer img{
-    max-width: 60%;
+    max-width: 40vw;
+  }
+  .copyright{
+    font-size: 0.9em;
   }
 }

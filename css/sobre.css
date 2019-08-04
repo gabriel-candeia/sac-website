@@ -1,10 +1,18 @@
 #Sobre {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto';
-    background-color: #eeeeee;
+    font-family: "Open Sans", sans-serif;
 }
+
+#Sobre h2, #Sobre h3 {
+    color: #00B4DB;
+    border-bottom: 2px solid #00B4DB;
+}
+
+#Sobre h2 { display: inline-block; }
+#Sobre h3 { font-size: 1.4em; }
 
 .sobre_classe > p {
     font-size: 1.2em;
@@ -17,21 +25,6 @@
     text-align: justify;
     margin-left: 13vw;
     margin-right: 13vw;
-}
-
-.sobre_classe > h1 {
-    font-size: 2.5em;
-    vertical-align: middle;
-    grid-row-start: 1;
-    letter-spacing: 5px;
-    margin: 10px 0 16px;
-    justify-self: center;
-}
-
-.sobre_classe > h2 {
-    margin-top: 2vh; 
-    display: flex;
-    border-bottom: 0.1em solid #1FC9BB;
 }
 
 #icones {
@@ -88,7 +81,7 @@
 }
 
 #frase_colorida {
-    color: #005C9E;
+    color: #1FC9BB;
     font-size: 1.35em;
     font-weight: 700;
     text-align: center;

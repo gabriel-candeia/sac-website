@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta charset="utf-8">
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<title>XIV Semana Acadêmica da Computação</title>
 	<!-- Fonte Roboto -->
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet">
@@ -24,40 +25,45 @@
 	<link rel="stylesheet" href="css/apoio.css">
 	<link rel="stylesheet" href="css/workshops.css">
 	<link rel="stylesheet" href="css/palestras.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
 </head>
 
 <body>
 	<header>
 		<nav class="navbar-sac">
-			<img class="logo" src="img/logo-site-xiv.png" />
+			<a href="#"><img class="logo" src="img/logo-site-xiv.png"/></a>
 			<span class="toggle-icon" id="js-toggle-icon">
 				<i class="fas fa-bars"></i>
 			</span>
 			<ul class="nav-menu" id="js-nav-menu">
-				<li><a href="#Inicio">INICIO</a></li>
+				<li><a href="#">INICIO</a></li>
 				<li><a href="#Atividades">ATIVIDADES</a></li>
-				<li><a href="#Convidados">CONVIDADOS</a></li>
+				<li><a href="#mapaSAC">MAPA</a></li>
 				<li><a href="views/subscription.html">INSCREVA-SE</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<div class="home">
-		<h1 class="titulo">XIV Semana Acadêmica da Computação</h1>
-		<h2 class="subtitulo">12 A 16 DE AGOSTO DE 2019</h2>
-		<a href="./views/subscription.html">INSCREVA-SE</a>
+	<div class="image">
+		<div class="home">
+			<h1 class="titulo">XIV Semana Acadêmica da Computação</h1>
+			<h2 class="subtitulo">12 A 16 DE AGOSTO DE 2019</h2>
+			<a href="./views/subscription.html">INSCREVA-SE</a>
+		</div>
 	</div>
 
-	<section id="Sobre">
+	<section id="Sobre" class="sac-section">
+		<h2>SOBRE</h2>
 		<div class="sobre_classe">	
-			<h1>SOBRE</h1>
-			<h2>O que é a Semana Acadêmica da Computação?</h2>
+			<h3>O que é a Semana Acadêmica da Computação?</h3>
 			<p> Criada em 2006, a Semana Acadêmica da Computação, mais conhecida como SAC, é um evento de extensão do 
 				Departamento de Computação da Universidade Federal do Ceará, organizada anualmente pelo PET Computação. 
 				Suas atividades se extendem do auditório do Centro de Ciências, no bloco 902, aos laboratórios do Departamento de Computação, 
 				no bloco 910. 
 			</p>
-			<h2>Por quê eu devo ir à SAC?</h2>
+			<h3>Por quê eu devo ir à SAC?</h3>
 			<p> A SAC tem como objetivo oferecer, aos alunos e ao público em geral, a oportunidade de conviver e interagir 
 				com diversas áreas da computação, por meio de palestras, mesas-redondas e workshops sobre Data Science, 
 				Machine Learning, Empreendimento e vários outros tópicos.
@@ -110,12 +116,13 @@
 		</div>
 	</section>
 
-	<section class="workshops">
-		<h2 class="nome-workshop">WORKSHOPS</h2>
+	<a name="Atividades"></a>
+	<section class="workshops sac-section">
+		<h2>WORKSHOPS</h2>
 		<ul class="workshops-list">
 			<li class="workshops-items" id="c1">
 				<section></section>
-				<p>Teaching in Lab Settings: First Day and Beyond</p>
+				<p>Introdução a ReactJS</p>
 			</li>
 			<li class="workshops-items" id="c2">
 				<section></section>
@@ -123,35 +130,126 @@
 			</li>
 			<li class="workshops-items" id="c3">
 				<section></section>
-				<p>Teaching 1:1 in Office Hours and Study Centers</p>
+				<p>Internet of Things</p>
 			</li>
 			<li class="workshops-items" id="c4">
 				<section></section>
-				<p>Teaching SS/HUM* Quiz Sections: First Day and Beyond</p>
+				<p>Sistema de Informação Geográfica em Python com GeoPandas</p>
+			</li>
+			<li class="workshops-items" id="c5">
+				<section></section>
+				<p>Firmando os Pés no Novo Mundo Chamado Machine Learning</p>
 			</li>
 		</ul>
 		<div class="division"></div>
-		<h3 id="title">Lorem ipsum.</h3>
+		<h3 id="title">Introdução a ReactJS</h3>
 		<div class="division"></div>
-		<p class="description" id="ws">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et
-			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.</p>
+		<p class="description" id="ws">Nesse workshop, será abordado como as novas tendências do desenvolvimento web compõem o React, e como e porquê este se tornou tão conhecido e utilizado pelas grandes empresas (Facebook, Netflix, Microsoft). Além disso, serão abordadas tecnologias como Webpack, Browserify, Node.js e Npm/Yarn.</p>
 	</section>
 
-	<section class="itens">
-		<h1>CAMISAS</h1>
+	<section class="palestras">
+	   	<h2 class="nome-palestra">PALESTRAS</h2>
+		<ul class="rectangles">
+			<li class="rectangles-items-orange">
+				<img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1> (Segunda-feira) Introductory Lectures: Adapting to a New Culture Lecture</h1>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange">
+				<img src="img/palestrantes/JoaoBatista.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1> (Segunda-feira) O que esperar quando seu usuário está esperando</h1>
+					<p>"Inspirada na palestra de Fernanda Bernardo sobre Perceived Performance, 'O que esperar quando seu usuário está esperando' tem como objetivo mostrar aos espectadores as diversas maneiras de manipular os meios de espera de uma aplicação qualquer de modo que o usuário não sinta a espera de maneira negativa."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r2">
+				<img src="img/palestrantes/JoseMaria.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Segunda-feira) Introductory Lectures: Academic Study Lecture</h1>
+					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r3">
+				<img src="img/palestrantes/JoaoBatista.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Terça-feira) Flutter - Desenvolvendo hoje o mobile do amanhã</h1>
+					<p>"A palestra tem como objetivo apresentar ao público o avanço do desenvolvimento mobile com o Flutter, um SDK desenvolvido pela Google, e mostrar o contínuo crescimento da relevância da tecnologia no mercado, pois impacta tanto no quesito de desenvolvimento quanto em experiência de usuário."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r4">
+				<img src="img/palestrantes/SeltonFiuza.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Terça-feira) Containerização – Um Passo para DevOps</h1>
+					<p>"Os DevOps auxiliam empresas no gerenciamento de lançamento de novas versões, ao padronizar ambientes de desenvolvimento. Eles são frequentemente descritos como uma relação mais colaborativa e produtiva entre equipes de desenvolvimento e operações. A containerização é uma das grandes formas de mudança nos ambientes e nas entregas de softwares, produtos e funcionalidades."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/FernandoTrinta.png" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Terça-feira) Computação em Nuvem</h1>
+					<p>"Computação em nuvem é a possibilidade de acessar arquivos e executar diferentes tarefas pela internet, sem a necessidade de instalar aplicativos no computador. O armazenamento de dados é feito em serviços on-line, em uma rede."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Quarta-feira) Blockchain - O Desafio</h1>
+					<p>"A palestra tem como objetivo apresentar o que é a Blockchain, onde surgiu esse conceito e por quê ela tenta resolver um problema bem conhecido em sistemas distribuídos."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/LeviMoreira.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Quarta-feira) Como ser um desenvolvedor Android em 2019</h1>
+					<p>"A palestra tem como objetivo apresentar um pouco dos pontos das mudanças mais importantes dos últimos anos no desenvolvimento Android, bem como destacar ferramentas e tecnologias que um desenvolvedor Android deve dominar em 2019. A oportunidade é ideal tanto para quem já inciou na área e está querendo saber no que deve focar, como também para quem está pensando em entrar no mundo Android e ainda não sabe por onde começar."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/DanielAugusto.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Quarta-feira) Um Vírus em Pokémon Red/Blue</h1>
+					<p>"Um tour pelo primeiro virus nativo para Game Boy. Escrito e executado direto no próprio Game Boy, ele infecta o cartucho de todos que tentam trocar Pokémon com um Game Boy infectado."</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Sexta-feira) Mercado de Trabalho</h1>
+					<p>"-"</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Sexta-feira) BTGPactual</h1>
+					<p>"-"</p>
+				</section>
+			</li>
+			<li class="rectangles-items-orange" id="r1">
+				<img src="img/palestrantes/EdvarFilho.jpg" class="imagem-palestrantes">
+				<section class="text">
+					<h1>(Sexta-feira) Data Scientist: A Profissão Mais Sexy do Momento</h1>
+					<p>"Data Science é o estudo disciplinado dos dados e informações inerentes ao negócio e todas as visões que podem cercar um determinado assunto. É uma ciência que estuda as informações, seu processo de captura, transformação, geração e, posteriormente, análise de dados."</p>
+				</section>
+			</li>
+		</ul>
+	</section>
+
+	<section class="itens sac-section">
+		<h2>CAMISAS</h2>
 		<div class="imagens">
 			<div class="blue-bg">
 				<img src="img/azul.png" alt="">
+				<h2>R$ 20</h2>
 			</div>
 			<div class="orange-bg">
 				<img src="img/laranja.png" alt="">
+				<h2>R$ 20</h2>
 			</div>
 		</div>
-		<h2>SORTEIOS DA SAC</h2>
+		<h2>SORTEIOS</h2>
 		<div class="brindes">
 			<img src="img/parceiro_Teste.png" alt="">
 			<img src="img/parceiro_Teste.png" alt="">
@@ -159,49 +257,8 @@
 		</div>		
 	</section>
 
-	<section class="palestras">
-	   	<h2 class="nome-palestra">PALESTRAS</h2>
-		<ul class="rectangles">
-			<li class="rectangles-items-orange">
-				<img src="img/palestrantes/LucasPeres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Adapting to a New Culture Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r2">
-				<img src="img/palestrantes/Minho.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Academic Study Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r3">
-				<img src="img/palestrantes/LucasPeres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Education in England and Wales Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r4">
-				<img src="img/palestrantes/LucasPeres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Higher Education in Britain</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r1">
-				<img src="img/palestrantes/LucasPeres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Adapting to a New Culture Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-		</ul>
-	</section>
-
-	<section id="secao_programacao">
-		<h1 id="titulo_cronograma">CRONOGRAMA DE ATIVIDADES</h1>
+	<section id="secao_programacao" class="sac-section">
+		<h2>CRONOGRAMA</h2>
 
 		<div class="programacao">
 				<div class="dias">
@@ -394,32 +451,39 @@
 		</div>
 	</div>
 	
-	<section class="patrocinio">
-		<h1>PATROCÍNIO</h1>
+	<section class="patrocinio sac-section">
+		<h2>PATROCÍNIO</h2>
 		<div>
-			<img src="img/parceiro_Teste.png">
-			<img src="img/parceiro_Teste.png">
-			<img src="img/parceiro_Teste.png">
+			<a href="#"><img src="img/logo-atlantico.png"></a>
+			<a href="https://www.autocorerobotica.com.br/"><img src="img/logo-autocore.png"></a>
 		</div>
-		<h1>PARCEIROS</h1>
+		<h2>PARCEIROS</h2>
 		<div>
-			<img src="img/parceiro_Teste.png">
+			<!-- <img src="img/parceiro_Teste.png"> -->
 		</div>
 	</section>
+
+
+	<a name="mapaSAC"></a>
+	<section class="mapaSAC sac-section">
+		<h2>MAPA DA SAC</h2>
+		<div id="mapa"></div>
+	</section>
+	
 
 	<footer>
 		<div>
 			<h4>Realização</h4>
-			<img class="PET-LOGO" src="img/footer/logo-pet.png" />
+			<a href="http://www.petcomp.ufc.br/"><img class="PET-LOGO" src="img/footer/logo-pet.png" /></a>
 		</div>
 
 		<div>
 			<h4>Redes Sociais</h4>
 			<ul class="linksSocial">
-				<li><i class="fab fa-facebook-square"></i> <a href="#">FACEBOOK</a></li>
-				<li><i class="fab fa-instagram"></i> <a href="#">INSTAGRAM</a></li>
-				<li><i class="far fa-envelope"></i> <a href="#">EMAIL</a></li>
-				<li><i class="fas fa-globe-africa"></i> <a href="#">SITE</a></li>
+				<li><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/PETCompUFC/">FACEBOOK</a></li>
+				<li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/petcompufc/">INSTAGRAM</a></li>
+				<li><i class="far fa-envelope"></i> <a href="mailto:petcomp@ufc.br">EMAIL</a></li>
+				<li><i class="fas fa-globe-africa"></i> <a href="http://www.petcomp.ufc.br/">SITE</a></li>
 			</ul>
 		</div>
 
@@ -436,12 +500,22 @@
 		<div>
 			<h4>Apoio Institucional</h4>
 			<div class="Apoio">
-				<img src="img/footer/logo-dc.png" />
-				<img src="img/footer/logo-ufc.png">
+				<a href="http://portal.dc.ufc.br/"><img src="img/footer/logo-dc.png" /></a>
+				<a href="http://www.ufc.br/"><img src="img/footer/logo-ufc.png"></a>
 			</div>
 		</div>
 	</footer>
 
+	<section class="copyright">
+		<p>© 2019. XIV Semana Acadêmica da Computação / 
+			<a href="http://www.petcomp.ufc.br/">PET Computação UFC</a>
+		</p>
+	</section>
+
+ 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+	crossorigin=""></script>
+	<script type="text/javascript" src="js/mapa.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src='js/programacao.js'></script>
 </body>
