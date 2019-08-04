@@ -22,7 +22,7 @@ header{
     display:grid;
     grid-template-areas: "title nav";
     justify-content: space-between;
-    background-color: #dddddd;
+    background: #dddddd;
     box-shadow: 0 3px 4px rgba(0,0,0,0.2);
 }
 
