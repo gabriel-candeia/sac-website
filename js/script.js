@@ -31,8 +31,8 @@ function show1() {
 }
 
 function show2() {
-	ws.innerHTML = "Internet das coisas é um conceito que se refere à interconexão digital de objetos cotidianos com a internet. Durante o workshop, serão feitas atividades com NodeMCU como servidor, gerando interfaces por meio de diferentes protocolos de comunicação.";
-	title.innerHTML = "Internet of Things";
+	ws.innerHTML = "O Akka é um kit de ferramentas gratuito e de código aberto que simplifica a construção de aplicativos simultâneos e distribuídos na JVM. Akka suporta múltiplos modelos de programação para concorrência, mas enfatiza a simultaneidade baseada em atores, com inspiração tirada de Erlang.";
+	title.innerHTML = "Uma breve visão sobre Akka e seus Atores";
 }
 
 function show3() {
