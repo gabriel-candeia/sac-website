@@ -11,8 +11,8 @@
 #titulo_cronograma {
   display: flex;
   border-bottom: 0.1em solid #fdb122;
-  font-size: 2em;
-  margin-bottom: 5vh;
+  font-size: 2.5em;
+  margin: 20px 0;
 }
 
 .programacao {

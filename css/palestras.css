@@ -1,7 +1,7 @@
 .palestras {
   display: grid;
   grid-template-rows: auto auto;
-  background-color: #333;
+  background-color: #0083B0;
   overflow-x: hidden;
 }
 
@@ -19,11 +19,14 @@
   text-align: center;
   font-family: 'Roboto';
   font-size: 2.5em;
-  color: #F37335;
+  color: #fff;
   vertical-align: middle;
-  background-color: #eeeeee;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
   grid-row-start: 1;
   letter-spacing: 5px;
+  padding: 20px 0;
 }
 
 
@@ -130,7 +133,7 @@
   .rectangles-items-orange {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 33vh auto;
+  grid-template-rows: 33vh 300px;
   opacity: 0.6;
   text-align: center;
   transition: all .2s ease-in-out;

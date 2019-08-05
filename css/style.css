@@ -77,7 +77,6 @@ body{
 
 /* Fim Home page */
 
-
 /* Inicio dos itens da SAC*/
 
 .itens {
@@ -88,6 +87,8 @@ body{
 .itens h2{
   align-self: center;
   font-weight: bold;
+  font-size: 2.5em;
+  margin: 20px 0;
   color: #00B4DB;
   border-bottom: 2px solid #00B4DB;
 }
@@ -172,12 +173,17 @@ body{
 .mapaSAC{
   display: flex;
   flex-direction: column;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 .mapaSAC h2{
-  color: #00B4DB;
+  color: #fff;
+  padding: 20px 0;
   align-self: center;
   border-bottom: 2px solid #00B4DB;
+  font-size: 2.5em;
 }
 
 #mapa{

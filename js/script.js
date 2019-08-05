@@ -31,7 +31,7 @@ function show1() {
 }
 
 function show2() {
-	ws.innerHTML = "O Akka é um kit de ferramentas gratuito e de código aberto que simplifica a construção de aplicativos simultâneos e distribuídos na JVM. Akka suporta múltiplos modelos de programação para concorrência, mas enfatiza a simultaneidade baseada em atores, com inspiração tirada de Erlang.";
+	ws.innerHTML = "Quando falamos de programação distribuída e/ou paralela, é comum que muitos programadores já fiquem preocupados. São muitos modelos de programação, muitos paradigmas e pontos para se preocupar quando trabalhamos nesse tipo de contexto. Neste workshop, apresentaremos o Akka, um framework que nos permite trabalhar de maneira paralela e distribuída utilizando o modelo de programação de atores. Embora também possa ser utilizado com Java, apresentaremos o Akka utilizando a linguagem Scala, uma linguagem funcional que nos permite trabalhar mais facilmente com abstrações, o que nos dar grandes poderes. Como ja diria o Tio Ben ...";
 	title.innerHTML = "Uma breve visão sobre Akka e seus Atores";
 }
 

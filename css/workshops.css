@@ -11,6 +11,8 @@
 .workshops h2 {
   color: #fff;
   border-color: #fa7c30;
+  padding: 20px 0;
+  font-size: 2.5em;
 }
 
 .workshops h3 {
@@ -26,6 +28,7 @@
   text-align: center;
   color: #fff;
   margin: 20px 0px;
+  padding: 20px 0;
 }
 
 .workshops-items section {
@@ -73,10 +76,10 @@
 /* Fim Workshops */
 @media screen and (max-width: 700px) {
 
-  .workshops {
+  /* .workshops {
     height: auto;
     width: auto;
-  }
+  } */
 
   .workshops-list {
     display: grid;
