@@ -7,6 +7,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .sac-section {
@@ -22,6 +23,13 @@ body{
 } */
 
 /* Home page */
+
+.image{
+  background: url('../img/Home_Background.png') center center no-repeat rgba(0,92,158, 0.5);
+  overflow: hidden; 
+  background-size: cover;
+}
+
 .home{
   width: 100%;
   height: 90vh;
@@ -30,9 +38,7 @@ body{
   align-items: center;
   justify-content: center;  
   
-  background: url('placeHolder.jpeg') no-repeat rgb(0,92,158);
-  background-blend-mode: overlay;
-  background-size: 100% 100%;
+  background: rgba(0, 179, 219, 0.6);
 }
 
 .titulo{
@@ -53,6 +59,7 @@ body{
 
 .home a{
   font-size: 1em;
+  text-decoration: none;
   color: #fff;
   padding: 8px 40px;
   border:  #fff 1px solid;
@@ -70,17 +77,12 @@ body{
 
 /* Fim Home page */
 
-/* Começo Palestras */
-
 
 /* Inicio dos itens da SAC*/
 
 .itens {
   display: flex;
   flex-direction: column;
-
-  background: #eeeeee;
-
 }
 
 .itens h2{
@@ -88,12 +90,16 @@ body{
   font-weight: bold;
   color: #00B4DB;
   border-bottom: 2px solid #00B4DB;
-  color: 
+}
+
+.imagens h2{
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .imagens img{
-  max-height: 50vh;
-  width: auto;
+  max-width: 30vw;
+  height: auto;
   align-self: center;
   transition: all .5s ease-in-out;
 }
@@ -108,20 +114,22 @@ body{
 
 .blue-bg, .orange-bg {
   display: flex;
+  overflow: hidden;
+  flex-direction: column;
   width: 50%;
   justify-content: center;
   transition: .25s ease;
 }
 
 .orange-bg{
-  border-left: solid #fff;
+  border-left: 0.2px solid #fff;
   background: #FDC830;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 .blue-bg{
-  border-right: solid #fff;
+  border-right: 0.2px solid #fff;
   background: #00B4DB;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -133,9 +141,9 @@ body{
 .blue-bg:hover {
   width: 70%;
 }
-/* .blue-bg:hover + .blue-bg {
+.blue-bg:hover + .blue-bg {
   width: 30%;
-} */
+}
 .orange-bg:hover {
   width: 70%;
 }
@@ -159,9 +167,27 @@ body{
   filter: saturate(100%);
 }
 
+/*Mapa da SAC*/
+
+.mapaSAC{
+  display: flex;
+  flex-direction: column;
+}
+
+.mapaSAC h2{
+  color: #00B4DB;
+  align-self: center;
+  border-bottom: 2px solid #00B4DB;
+}
+
+#mapa{
+  height: 400px;
+  margin: 0px 20px;
+}
+
 /*Fim do Itens da SAC*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1000px){
   body{
     font-size: 12px;
   }
@@ -173,6 +199,19 @@ body{
   .subtitulo{
     padding: 0;
     margin: 16px 20%;
+  }
+
+  .brindes img{
+    max-height: 10vh;
+    filter: none;
+  }
+
+  .imagens img{
+    max-width: 55vw;
+  }
+
+  #mapa{
+    margin: 0px;
   }
 }
 

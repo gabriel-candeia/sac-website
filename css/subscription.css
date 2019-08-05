@@ -22,7 +22,7 @@ header{
     display:grid;
     grid-template-areas: "title nav";
     justify-content: space-between;
-    background-color: #dddddd;
+    background: #dddddd;
     box-shadow: 0 3px 4px rgba(0,0,0,0.2);
 }
 
@@ -135,11 +135,17 @@ section p{
     padding: 8px 0px;
 }
 
-.imagens div img{
+.imagens div .fas{
     margin: 10px;
-    max-height: 20vh;
-    width: auto;
+    color: #555555;
+    font-size: 8em;
+    transition: all .3s ease-in-out;
 }
+
+.imagens div .fas:hover{
+    color: #ff9f43
+}
+
 
 .imagens div p{
     text-align: center; 
@@ -202,10 +208,8 @@ section p{
         flex-direction: column;
     }
 
-    .imagens div img{
-        max-height: 80px;
-        min-height: 10vh;
-        width:auto;
+    .imagens div .fas{
+        color: #ff9f43;
     }
 }
 

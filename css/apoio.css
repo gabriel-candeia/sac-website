@@ -1,10 +1,6 @@
 .patrocinio{
     display: grid;
-    padding: 20px;
-    background: #00B4DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #fff;
     grid-template-columns: 1fr;
     
     justify-items: center;
@@ -12,25 +8,51 @@
 }
 
 .patrocinio h2 {
-    color: #fff;
-    border-bottom: 2px solid #fff;
+    color: #00B4DB;
+    border-bottom: 2px solid #00B4DB;
 }
 
 .patrocinio div{
     display: flex;
+    flex-flow: wrap;
     justify-content: center;
 }
 
 .patrocinio img{
     display: block;
-    max-height: 15vh;
-    width: auto;
+    max-width: 25vw;
+    max-height: 40vh;
+    height: auto;
     margin: 10px;
+    transition: 0.3s ease-in-out;
+    justify-self: center;
+}
+
+.parceiros img{
+    max-width: 15vw;
+    max-height: 25vh;
+}
+
+.patrocinio a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.patrocinio img:hover{
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 800px){
+    .patrocinio div{
+        flex-flow: column;
+    }
+
     .patrocinio img{
-        max-height: 10vh;
+        max-width: 50vw;
+    }
+    .parceiros img{
+        max-width: 30vw;
     }
 }
 
