@@ -2,562 +2,660 @@
 <html lang="pt-br">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta charset="utf-8">
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<title>XIV Semana Acadêmica da Computação</title>
-	<!-- Fonte Roboto -->
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>XIV Semana Acadêmica da Computação</title>
+  <!-- Fonte Roboto -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800"
+    rel="stylesheet">
 
-	<!-- Icones -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- Icones -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/header.css">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/footer.css">
-	<link rel="stylesheet" href="css/programacao.css">
-	<link rel="stylesheet" href="css/modal.css">
-	<link rel="stylesheet" href="css/sobre.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/header.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/programacao.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/sobre.css">
 
-	<link rel="stylesheet" href="css/apoio.css">
-	<link rel="stylesheet" href="css/workshops.css">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  <link rel="stylesheet" href="css/apoio.css">
+  <link rel="stylesheet" href="css/workshops.css">
+  <link rel="stylesheet" href="css/palestras.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin=""/>
+    crossorigin="" />
 </head>
 
 <body>
-	<header>
-		<nav class="navbar-sac">
-			<a href="#"><img class="logo" src="img/logo-site-xiv.png"/></a>
-			<span class="toggle-icon" id="js-toggle-icon">
-				<i class="fas fa-bars"></i>
-			</span>
-			<ul class="nav-menu" id="js-nav-menu">
-				<li><a href="#">INICIO</a></li>
-				<li><a href="#Atividades">ATIVIDADES</a></li>
-				<li><a href="#mapaSAC">MAPA</a></li>
-				<li><a href="views/subscription.html">INSCREVA-SE</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header>
+    <nav class="navbar-sac">
+      <a href="#"><img class="logo" src="img/logo-site-xiv.png" /></a>
+      <span class="toggle-icon" id="js-toggle-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <ul class="nav-menu" id="js-nav-menu">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#Atividades">ATIVIDADES</a></li>
+        <li><a href="#mapaSAC">MAPA</a></li>
+        <li><a href="views/subscription.html">INSCREVA-SE</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<div class="image">
-		<div class="home">
-			<h1 class="titulo">XIV Semana Acadêmica da Computação</h1>
-			<h2 class="subtitulo">12 A 16 DE AGOSTO DE 2019</h2>
-			<a href="./views/subscription.html">INSCREVA-SE</a>
-		</div>
-	</div>
+  <div class="image">
+    <div class="home">
+      <h1 class="titulo">XIV Semana Acadêmica da Computação</h1>
+      <h2 class="subtitulo">12 A 16 DE AGOSTO DE 2019</h2>
+      <a href="./views/subscription.html">INSCREVA-SE</a>
+    </div>
+  </div>
 
-	<section id="Sobre" class="sac-section">
-		<div class="sobre_classe">	
-			<h1>SOBRE</h1>
-			<h2>O que é a Semana Acadêmica da Computação?</h2>
-			<p> Criada em 2006, a Semana Acadêmica da Computação, mais conhecida como SAC, é um evento de extensão do 
-				Departamento de Computação da Universidade Federal do Ceará, organizada anualmente pelo PET Computação. 
-				Suas atividades se extendem do auditório do Centro de Ciências, no bloco 902, aos laboratórios do Departamento de Computação, 
-				no bloco 910. 
-			</p>
-			<h2>Por quê eu devo ir à SAC?</h2>
-			<p> A SAC tem como objetivo oferecer, aos alunos e ao público em geral, a oportunidade de conviver e interagir 
-				com diversas áreas da computação, por meio de palestras, mesas-redondas e workshops sobre Data Science, 
-				Machine Learning, Empreendimento e vários outros tópicos.
-				É também uma oportunidade de alunos apresentarem pesquisas e compartilharem seus conhecimentos com outras
-				pessoas.
-			</p>
-			<p id="frase_colorida">Venha aprender sobre diversas áreas da computação e receber horas complementares por isso!</p>
-			<!-- <p> Para ver fotos de SACs anteriores, <a href='http://www.petcomp.ufc.br/sac'>clique aqui</a>.</p> -->
-		
-			<div id='icones'>
-				<div class="iconeComLegenda">
-					<div class="borda-circular">
-							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-alt" class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-								<path fill="currentColor" d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 
+  <section id="Sobre" class="sac-section">
+    <div class="sobre_classe">
+      <h1>SOBRE</h1>
+      <h2>O que é a Semana Acadêmica da Computação?</h2>
+      <p> Criada em 2006, a Semana Acadêmica da Computação, mais conhecida como SAC, é um evento de extensão do
+        Departamento de Computação da Universidade Federal do Ceará, organizada anualmente pelo PET Computação.
+        Suas atividades se extendem do auditório do Centro de Ciências, no bloco 902, aos laboratórios do Departamento
+        de Computação,
+        no bloco 910.
+      </p>
+      <h2>Por quê eu devo ir à SAC?</h2>
+      <p> A SAC tem como objetivo oferecer, aos alunos e ao público em geral, a oportunidade de conviver e interagir
+        com diversas áreas da computação, por meio de palestras, mesas-redondas e workshops sobre Data Science,
+        Machine Learning, Empreendimento e vários outros tópicos.
+        É também uma oportunidade de alunos apresentarem pesquisas e compartilharem seus conhecimentos com outras
+        pessoas.
+      </p>
+      <p id="frase_colorida">Venha aprender sobre diversas áreas da computação e receber horas complementares por isso!
+      </p>
+      <!-- <p> Para ver fotos de SACs anteriores, <a href='http://www.petcomp.ufc.br/sac'>clique aqui</a>.</p> -->
+
+      <div id='icones'>
+        <div class="iconeComLegenda">
+          <div class="borda-circular">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-alt"
+              class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 
 									5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 
 									6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 
 									6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 
 									12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z">
-								</path>
-							</svg>
-					</div>	
-					<p class="legenda">12 a 16 de agosto</p>
-				</div>
-				
-				<div class="iconeComLegenda">
-					<div class="borda-circular">
-							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-								<path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 
-									200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
-								</path>
-							</svg>
-					</div>
-					<p class="legenda">8h às 18h</p>
-				</div>
+              </path>
+            </svg>
+          </div>
+          <p class="legenda">12 a 16 de agosto</p>
+        </div>
 
-				<div class="iconeComLegenda">
-					<div class="borda-circular">
-							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map" class="svg-inline--fa fa-map fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-								<path fill="currentColor" d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 
+        <div class="iconeComLegenda">
+          <div class="borda-circular">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock"
+              class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 
+									200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
+              </path>
+            </svg>
+          </div>
+          <p class="legenda">8h às 18h</p>
+        </div>
+
+        <div class="iconeComLegenda">
+          <div class="borda-circular">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="map"
+              class="svg-inline--fa fa-map fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path fill="currentColor" d="M560.02 32c-1.96 0-3.98.37-5.96 1.16L384.01 96H384L212 35.28A64.252 64.252 0 0 0 191.76 32c-6.69 0-13.37 1.05-19.81 3.14L20.12 87.95A32.006 32.006 0 
 									0 0 0 117.66v346.32C0 473.17 7.53 480 15.99 480c1.96 0 3.97-.37 5.96-1.16L192 416l172 60.71a63.98 63.98 0 0 0 40.05.15l151.83-52.81A31.996 31.996 0 0 0 576 
 									394.34V48.02c0-9.19-7.53-16.02-15.98-16.02zM224 90.42l128 45.19v285.97l-128-45.19V90.42zM48 418.05V129.07l128-44.53v286.2l-.64.23L48 418.05zm480-35.13l-128 
 									44.53V141.26l.64-.24L528 93.95v288.97z">
-								</path>
-							</svg>
-					</div>
-					<p class="legenda">Centro de Ciências</p>
-				</div>
-	
-			</div>
-		</div>
-	</section>
+              </path>
+            </svg>
+          </div>
+          <p class="legenda">Centro de Ciências</p>
+        </div>
 
-	<a name="Atividades"></a>
-	<section class="workshops sac-section">
-		<h2>WORKSHOPS</h2>
-		<ul class="workshops-list">
-			<li class="workshops-items" id="c1">
-				<section></section>
-				<p>Teaching in Lab Settings: First Day and Beyond</p>
-			</li>
-			<li class="workshops-items" id="c2">
-				<section></section>
-				<p>Teaching Modern Languages: First Day and Beyond</p>
-			</li>
-			<li class="workshops-items" id="c3">
-				<section></section>
-				<p>Teaching 1:1 in Office Hours and Study Centers</p>
-			</li>
-			<li class="workshops-items" id="c4">
-				<section></section>
-				<p>Teaching SS/HUM* Quiz Sections: First Day and Beyond</p>
-			</li>
-		</ul>
-		<div class="division"></div>
-		<h3 id="title">Lorem ipsum.</h3>
-		<div class="division"></div>
-		<p class="description" id="ws">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-			labore et
-			dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-			pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-			laborum.</p>
-	</section>
+      </div>
+    </div>
+  </section>
 
-	<section class="itens sac-section">
-		<h2>CAMISAS</h2>
-		<div class="imagens">
-			<div class="blue-bg">
-				<img src="img/azul.png" alt="">
-				<h2>R$ 20</h2>
-			</div>
-			<div class="orange-bg">
-				<img src="img/laranja.png" alt="">
-				<h2>R$ 20</h2>
-			</div>
-		</div>
-		<!-- <h2>SORTEIOS</h2>
+  <a name="Atividades"></a>
+  <section class="workshops sac-section">
+    <h2>WORKSHOPS</h2>
+    <ul class="workshops-list">
+      <li class="workshops-items" id="c1">
+        <section></section>
+        <p>Teaching in Lab Settings: First Day and Beyond</p>
+      </li>
+      <li class="workshops-items" id="c2">
+        <section></section>
+        <p>Teaching Modern Languages: First Day and Beyond</p>
+      </li>
+      <li class="workshops-items" id="c3">
+        <section></section>
+        <p>Teaching 1:1 in Office Hours and Study Centers</p>
+      </li>
+      <li class="workshops-items" id="c4">
+        <section></section>
+        <p>Teaching SS/HUM* Quiz Sections: First Day and Beyond</p>
+      </li>
+    </ul>
+    <div class="division"></div>
+    <h3 id="title">Lorem ipsum.</h3>
+    <div class="division"></div>
+    <p class="description" id="ws">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut
+      labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.</p>
+  </section>
+
+  <section class="itens sac-section">
+    <h2>CAMISAS</h2>
+    <div class="imagens">
+      <div class="blue-bg">
+        <img src="img/azul.png" alt="">
+        <h2>R$ 20</h2>
+      </div>
+      <div class="orange-bg">
+        <img src="img/laranja.png" alt="">
+        <h2>R$ 20</h2>
+      </div>
+    </div>
+    <!-- <h2>SORTEIOS</h2>
 		<div class="brindes">
 			<img src="img/parceiro_Teste.png" alt="">
 			<img src="img/parceiro_Teste.png" alt="">
 			<img src="img/parceiro_Teste.png" alt="">
 		</div>		 -->
-	</section>
+  </section>
 
-	<!-- <section class="palestras">
-	   	<h2 class="nome-palestra">PALESTRAS</h2>
-		<ul class="rectangles">
-			<li class="rectangles-items-orange" id="r1">
-				<div></div>
-				<img src="img/palestrantes/Lucas Peres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Adapting to a New Culture Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r2">
-				<div></div>
-				<img src="img/palestrantes/Minho.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Academic Study Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r3">
-				<div></div>
-				<img src="img/palestrantes/Lucas Peres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Education in England and Wales Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r4">
-				<div></div>
-				<img src="img/palestrantes/Lucas Peres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Higher Education in Britain</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-			<li class="rectangles-items-orange" id="r1">
-				<div></div>
-				<img src="img/palestrantes/Lucas Peres.jpg" class="imagem-palestrantes">
-				<section class="text">
-					<h1>Introductory Lectures: Adapting to a New Culture Lecture</h1>
-					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed velit mollis, a tincidunt justo volutpat."</p>
-				</section>
-			</li>
-		</ul>
-	</section> -->
+  <section class="palestras">
+    <h2 class="nome-palestra">PALESTRAS</h2>
+    <ul class="rectangles">
+      <li class="rectangles-items-orange">
+        <img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1> (Segunda-feira) Introductory Lectures: Adapting to a New Culture Lecture</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec
+            rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis
+            auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed
+            velit mollis, a tincidunt justo volutpat."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange">
+        <img src="img/palestrantes/JoaoBatista.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1> (Segunda-feira) O que esperar quando seu usuário está esperando</h1>
+          <p>"Inspirada na palestra de Fernanda Bernardo sobre Perceived Performance, 'O que esperar quando seu usuário
+            está esperando' tem como objetivo mostrar aos espectadores as diversas maneiras de manipular os meios de
+            espera de uma aplicação qualquer de modo que o usuário não sinta a espera de maneira negativa."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r2">
+        <img src="img/palestrantes/JoseMaria.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Segunda-feira) Introductory Lectures: Academic Study Lecture</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus lacus et semper mattis. Donec
+            rhoncus justo in felis ullamcorper fermentum. Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Nullam interdum pellentesque sem non maximus. Cras euismod, tortor ut iaculis
+            auctor, purus purus condimentum sapien, in ultrices lacus justo quis nunc. Pellentesque rutrum neque sed
+            velit mollis, a tincidunt justo volutpat."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r3">
+        <img src="img/palestrantes/JoaoBatista.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Terça-feira) Flutter - Desenvolvendo hoje o mobile do amanhã</h1>
+          <p>"A palestra tem como objetivo apresentar ao público o avanço do desenvolvimento mobile com o Flutter, um
+            SDK desenvolvido pela Google, e mostrar o contínuo crescimento da relevância da tecnologia no mercado, pois
+            impacta tanto no quesito de desenvolvimento quanto em experiência de usuário."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r4">
+        <img src="img/palestrantes/SeltonFiuza.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Terça-feira) Containerização – Um Passo para DevOps</h1>
+          <p>"Os DevOps auxiliam empresas no gerenciamento de lançamento de novas versões, ao padronizar ambientes de
+            desenvolvimento. Eles são frequentemente descritos como uma relação mais colaborativa e produtiva entre
+            equipes de desenvolvimento e operações. A containerização é uma das grandes formas de mudança nos ambientes
+            e nas entregas de softwares, produtos e funcionalidades."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/FernandoTrinta.png" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Terça-feira) Computação em Nuvem</h1>
+          <p>"Computação em nuvem é a possibilidade de acessar arquivos e executar diferentes tarefas pela internet, sem
+            a necessidade de instalar aplicativos no computador. O armazenamento de dados é feito em serviços on-line,
+            em uma rede."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Quarta-feira) Blockchain - O Desafio</h1>
+          <p>"A palestra tem como objetivo apresentar o que é a Blockchain, onde surgiu esse conceito e por quê ela
+            tenta resolver um problema bem conhecido em sistemas distribuídos."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/LeviMoreira.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Quarta-feira) Como ser um desenvolvedor Android em 2019</h1>
+          <p>"A palestra tem como objetivo apresentar um pouco dos pontos das mudanças mais importantes dos últimos anos
+            no desenvolvimento Android, bem como destacar ferramentas e tecnologias que um desenvolvedor Android deve
+            dominar em 2019. A oportunidade é ideal tanto para quem já inciou na área e está querendo saber no que deve
+            focar, como também para quem está pensando em entrar no mundo Android e ainda não sabe por onde começar."
+          </p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/DanielAugusto.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Quarta-feira) Um Vírus em Pokémon Red/Blue</h1>
+          <p>"Um tour pelo primeiro virus nativo para Game Boy. Escrito e executado direto no próprio Game Boy, ele
+            infecta o cartucho de todos que tentam trocar Pokémon com um Game Boy infectado."</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Sexta-feira) Mercado de Trabalho</h1>
+          <p>"-"</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Sexta-feira) BTGPactual</h1>
+          <p>"-"</p>
+        </section>
+      </li>
+      <li class="rectangles-items-orange" id="r1">
+        <img src="img/palestrantes/EdvarFilho.jpg" class="imagem-palestrantes">
+        <section class="text">
+          <h1>(Sexta-feira) Data Scientist: A Profissão Mais Sexy do Momento</h1>
+          <p>"Data Science é o estudo disciplinado dos dados e informações inerentes ao negócio e todas as visões que
+            podem cercar um determinado assunto. É uma ciência que estuda as informações, seu processo de captura,
+            transformação, geração e, posteriormente, análise de dados."</p>
+        </section>
+      </li>
+    </ul>
+  </section>
 
-	<section id="secao_programacao">
-		<h1 id="titulo_cronograma">PROGRAMAÇÃO</h1>
+  <section id="secao_programacao">
+    <h1 id="titulo_cronograma">PROGRAMAÇÃO</h1>
 
-		<div class="programacao">
-				<div class="dias">
-						<div class="dia" id="Segunda" onClick="cronogramaDia('Segunda','palestras-segunda')">Segunda-feira (12)</div>
-						<div class="dia" id="Terca" onClick="cronogramaDia('Terca', 'palestras-terca')">Terça-Feira (13)</div>
-						<div class="dia" id="Quarta" onClick="cronogramaDia('Quarta', 'palestras-quarta')">Quarta-Feira (14)</div>
-						<div class="dia" id="Quinta" onClick="cronogramaDia('Quinta', 'palestras-quinta')">Quinta-Feira (15)</div>
-						<div class="dia" id="Sexta" onClick="cronogramaDia('Sexta', 'palestras-sexta')">Sexta-Feira (16)</div>
-				</div>
+    <div class="programacao">
+      <div class="dias">
+        <div class="dia" id="Segunda" onClick="cronogramaDia('Segunda','palestras-segunda')">Segunda-feira (12)</div>
+        <div class="dia" id="Terca" onClick="cronogramaDia('Terca', 'palestras-terca')">Terça-Feira (13)</div>
+        <div class="dia" id="Quarta" onClick="cronogramaDia('Quarta', 'palestras-quarta')">Quarta-Feira (14)</div>
+        <div class="dia" id="Quinta" onClick="cronogramaDia('Quinta', 'palestras-quinta')">Quinta-Feira (15)</div>
+        <div class="dia" id="Sexta" onClick="cronogramaDia('Sexta', 'palestras-sexta')">Sexta-Feira (16)</div>
+      </div>
 
-				<div class="dias_mobile">
-					<select id="dia_selecionado">
-						<option selected>Selecione o dia</option>
-						<option onClick="cronogramaDia('Segunda', 'palestras-segunda')">Segunda-Feira (12)</option>
-						<option onClick="cronogramaDia('Terca', 'palestras-terca')">Terça-Feira (13)</option>
-						<option onClick="cronogramaDia('Quarta', 'palestras-quarta')">Quarta-Feira (14)</option>
-						<option onClick="cronogramaDia('Quinta', 'palestras-quinta')">Quinta-Feira (15)</option>
-						<option onClick="cronogramaDia('Sexta', 'palestras-sexta')">Sexta-Feira (16)</option>
-					</select>
-				</div>
+      <div class="dias_mobile">
+        <select id="dia_selecionado">
+          <option selected>Selecione o dia</option>
+          <option onClick="cronogramaDia('Segunda', 'palestras-segunda')">Segunda-Feira (12)</option>
+          <option onClick="cronogramaDia('Terca', 'palestras-terca')">Terça-Feira (13)</option>
+          <option onClick="cronogramaDia('Quarta', 'palestras-quarta')">Quarta-Feira (14)</option>
+          <option onClick="cronogramaDia('Quinta', 'palestras-quinta')">Quinta-Feira (15)</option>
+          <option onClick="cronogramaDia('Sexta', 'palestras-sexta')">Sexta-Feira (16)</option>
+        </select>
+      </div>
 
-				<div class="div_palestras">
-						<div class = "prog_palestras" id="palestras-segunda">
-								<div>7:30 | Credenciamento</div>
-								<div>8:00 | Abertura da Semana Acadêmica da Computação</div>
-								<div>8:20 | Pyladies</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','seg2')">9:10 | O que Esperar Quando seu Usuário está Esperando</div>
-								<div>10:20 | Desenvolvimentos e Aplicações para Processamento de Sinal ECG</div>
-								<div class="workshop" onClick="descricaoPalestra('workshop','seg4')">14:00 | Introdução a ReactJS</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação Geográfica em Python com GeoPandas</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo Chamado Machine Learning</div>
-						</div>
+      <div class="div_palestras">
+        <div class="prog_palestras" id="palestras-segunda">
+          <div>7:30 | Credenciamento</div>
+          <div>8:00 | Abertura da Semana Acadêmica da Computação</div>
+          <div>8:20 | Pyladies</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','seg2')">9:10 | O que Esperar Quando seu Usuário
+            está Esperando</div>
+          <div>10:20 | Desenvolvimentos e Aplicações para Processamento de Sinal ECG</div>
+          <div class="workshop" onClick="descricaoPalestra('workshop','seg4')">14:00 | Introdução a ReactJS</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação
+            Geográfica em Python com GeoPandas</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo
+            Chamado Machine Learning</div>
+        </div>
 
-						<div class = "prog_palestras" id="palestras-terca">
-								<div>7:30 | Credenciamento</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','ter1')">8:00 | Flutter - Desenvolvendo Hoje o Mobile do Amanhã</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','ter2')">9:10 | Containerização – Um Passo para DevOps</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','ter3')">10:20 | Computação em Nuvem</div>
-								<div class="workshop" onClick="descricaoPalestra('workshop','ter4')">14:00 | Uma Breve Visão sobre Akka e seus Atores</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação Geográfica em Python com GeoPandas</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo Chamado Machine Learning</div>
-						</div>
+        <div class="prog_palestras" id="palestras-terca">
+          <div>7:30 | Credenciamento</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','ter1')">8:00 | Flutter - Desenvolvendo Hoje o
+            Mobile do Amanhã</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','ter2')">9:10 | Containerização – Um Passo para
+            DevOps</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','ter3')">10:20 | Computação em Nuvem</div>
+          <div class="workshop" onClick="descricaoPalestra('workshop','ter4')">14:00 | Uma Breve Visão sobre Akka e seus
+            Atores</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação
+            Geográfica em Python com GeoPandas</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo
+            Chamado Machine Learning</div>
+        </div>
 
-						<div class = "prog_palestras" id="palestras-quarta">
-								<div>7:30 | Credenciamento</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','qua1')">8:00 | Blockchain - O Desafio</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','qua2')">9:10 | Como Ser um Desenvolvedor Android em 2019</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','qua3')">10:20 | Um Vírus em Pokémon Red/Blue</div>
-								<div class="workshop" onClick="descricaoPalestra('workshop','qua4')">14:00 | Internet of Things</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação Geográfica em Python com GeoPandas</div>
-								<div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo Chamado Machine Learning</div>
-						</div>
+        <div class="prog_palestras" id="palestras-quarta">
+          <div>7:30 | Credenciamento</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','qua1')">8:00 | Blockchain - O Desafio</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','qua2')">9:10 | Como Ser um Desenvolvedor Android
+            em 2019</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','qua3')">10:20 | Um Vírus em Pokémon Red/Blue
+          </div>
+          <div class="workshop" onClick="descricaoPalestra('workshop','qua4')">14:00 | Internet of Things</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg5')">14:00 | Sistema de Informação
+            Geográfica em Python com GeoPandas</div>
+          <div class="minicurso" onClick="descricaoPalestra('minicurso','seg6')">16:00 | Firmando os Pés no Novo Mundo
+            Chamado Machine Learning</div>
+        </div>
 
-						<div class ="prog_palestras" id="palestras-quinta">
-								<div>Dia da Informática</div>
-								<div>Feriado de Nossa Senhora da Assunção – Padroeira de Fortaleza</div>
-						</div>
+        <div class="prog_palestras" id="palestras-quinta">
+          <div>Dia da Informática</div>
+          <div>Feriado de Nossa Senhora da Assunção – Padroeira de Fortaleza</div>
+        </div>
 
-						<div class = "prog_palestras" id="palestras-sexta">
-								<div>7:30 | Credenciamento</div>
-								<div>8:00 | Mercado de Trabalho</div>
-								<div>10:00 | BTG Pactual</div>
-								<div class="palestra" onClick="descricaoPalestra('palestra','sex3')">11:00 | Data Scientist: A Profissão Mais Sexy do Momento</div>
-						</div>
-				</div>
-		</div>
-	</section>
-    
+        <div class="prog_palestras" id="palestras-sexta">
+          <div>7:30 | Credenciamento</div>
+          <div>8:00 | Mercado de Trabalho</div>
+          <div>10:00 | BTG Pactual</div>
+          <div class="palestra" onClick="descricaoPalestra('palestra','sex3')">11:00 | Data Scientist: A Profissão Mais
+            Sexy do Momento</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <div class="modal" id="my_modal">
-		<div class="bloco_modal">
+    <div class="bloco_modal">
 
-			<div id="modal_header">
-				<p id="event_type"></p>
-				<p id="modal_close">X</p>
-			</div>
-			
-			<div id="modal_secoes">
-				<div class="modal_secao" id="modal">
-					<h3 class="modal_secao_header">Título</h3>
-					<p class ="informacao_palestra" id="informacao_titulo"></p>
-				</div>
+      <div id="modal_header">
+        <p id="event_type"></p>
+        <p id="modal_close">X</p>
+      </div>
 
-				<div class="modal_secao">
-					<h3 class="modal_secao_header">Ministrante</h3>
-					<p class ="informacao_palestra" id="informacao_palestrante"></p>
-				</div>
+      <div id="modal_secoes">
+        <div class="modal_secao" id="modal">
+          <h3 class="modal_secao_header">Título</h3>
+          <p class="informacao_palestra" id="informacao_titulo"></p>
+        </div>
 
-				<div class="modal_secao">
-					<h3 class="modal_secao_header">Descrição</h3>
-					<p class ="informacao_palestra" id="informacao_descricao"></p>
-				</div>
+        <div class="modal_secao">
+          <h3 class="modal_secao_header">Ministrante</h3>
+          <p class="informacao_palestra" id="informacao_palestrante"></p>
+        </div>
 
-				<div class="modal_secao">
-					<h3 class="modal_secao_header">Local</h3>
-					<p class ="informacao_palestra" id="informacao_local"></p>
-				</div>
-			</div>
+        <div class="modal_secao">
+          <h3 class="modal_secao_header">Descrição</h3>
+          <p class="informacao_palestra" id="informacao_descricao"></p>
+        </div>
 
-			<div id="modal_content">  
-				<div class="modal_palestras" id="seg1">
-					<p class="nome_palestra">Seg-Palestra1</p>
-					<p class="nome_palestrante">Seg-Palestrante1</p>
-					<p class="descricao_palestra">Seg-Descrição1</p>
-					<p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
-				</div>
-				
-				<div class="modal_palestras" id ="seg2">
-					<p class="nome_palestra">O que esperar quando seu usuário está esperando</p>
-					<p class="nome_palestrante">João Batista de Freitas Filho</p>
-					<p class="descricao_palestra">
-						Inspirada na palestra de Fernanda Bernardo sobre Perceived Performance, 
-						'O que esperar quando seu usuário está esperando' tem como objetivo 
-						mostrar aos espectadores as diversas maneiras de manipular os meios de 
-						espera de uma aplicação qualquer de modo que o usuário não sinta a 
-						espera de maneira negativa.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+        <div class="modal_secao">
+          <h3 class="modal_secao_header">Local</h3>
+          <p class="informacao_palestra" id="informacao_local"></p>
+        </div>
+      </div>
 
-				<div class="modal_palestras" id ="seg3">
-					<p class="nome_palestra">Seg-Palestra3</p>
-					<p class="nome_palestrante">José Maria da Silva Monteiro Filho</p>
-					<p class="descricao_palestra">Seg-Descrição3</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+      <div id="modal_content">
+        <div class="modal_palestras" id="seg1">
+          <p class="nome_palestra">Seg-Palestra1</p>
+          <p class="nome_palestrante">Seg-Palestrante1</p>
+          <p class="descricao_palestra">Seg-Descrição1</p>
+          <p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
+        </div>
 
-				<div class="modal_palestras" id ="seg4">
-					<p class="nome_palestra">Introdução a ReactJS</p>
-					<p class="nome_palestrante">Samir Braga Chaves</p>
-					<p class="descricao_palestra">
-						Nesse workshop, será abordado como as novas tendências do desenvolvimento web compõem o React, 
-						e como e porquê este se tornou tão conhecido e utilizado pelas grandes empresas (Facebook, Netflix,
-						Microsoft). Além disso, serão abordadas tecnologias como Webpack, Browserify, Node.js e Npm/Yarn. 
-					</p>
-					<p class="local_palestra">LEC I - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="seg2">
+          <p class="nome_palestra">O que esperar quando seu usuário está esperando</p>
+          <p class="nome_palestrante">João Batista de Freitas Filho</p>
+          <p class="descricao_palestra">
+            Inspirada na palestra de Fernanda Bernardo sobre Perceived Performance,
+            'O que esperar quando seu usuário está esperando' tem como objetivo
+            mostrar aos espectadores as diversas maneiras de manipular os meios de
+            espera de uma aplicação qualquer de modo que o usuário não sinta a
+            espera de maneira negativa.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id ="seg5">
-					<p class="nome_palestra">Sistema de Informação Geográfica em Python com GeoPandas</p>
-					<p class="nome_palestrante">Francisco Carlos Freire Nunes Junior</p>
-					<p class="descricao_palestra">
-						GeoPandas é um projeto open source para facilitar a manipulação de dados geoespaciais em Python. 
-						Durante o curso, serão feitas diversas atividades relaciondas a sistemas geográficos, tais como: 
-						manipular dados georreferenciados, carregar mapas em estruturas de grafos e calcular o menor 
-						caminho numa rede de ruas.
-					</p>
-					<p class="local_palestra">LEC II - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="seg3">
+          <p class="nome_palestra">Seg-Palestra3</p>
+          <p class="nome_palestrante">José Maria da Silva Monteiro Filho</p>
+          <p class="descricao_palestra">Seg-Descrição3</p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id ="seg6">
-					<p class="nome_palestra">Firmando os Pés no Novo Mundo Chamado Machine Learning</p>
-					<p class="nome_palestrante">Andreza e Edvar</p>
-					<p class="descricao_palestra">
-						O minicurso visa introduzir os alunos ao fantástico mundo do Machine Learning, por meio
-						da formação de uma base sólida e necessária para melhor entendimento da área.
-					</p>
-					<p class="local_palestra">LEC II - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="seg4">
+          <p class="nome_palestra">Introdução a ReactJS</p>
+          <p class="nome_palestrante">Samir Braga Chaves</p>
+          <p class="descricao_palestra">
+            Nesse workshop, será abordado como as novas tendências do desenvolvimento web compõem o React,
+            e como e porquê este se tornou tão conhecido e utilizado pelas grandes empresas (Facebook, Netflix,
+            Microsoft). Além disso, serão abordadas tecnologias como Webpack, Browserify, Node.js e Npm/Yarn.
+          </p>
+          <p class="local_palestra">LEC I - Bloco 910</p>
+        </div>
 
-				<div class="modal_palestras" id="ter1">
-					<p class="nome_palestra">Flutter - Desenvolvendo hoje o mobile do amanhã</p>
-					<p class="nome_palestrante">CEOS (João Batista, Gabriel Freire, Vinicius Sabariz)</p>
-					<p class="descricao_palestra">
-						A palestra tem como objetivo apresentar ao público o avanço do desenvolvimento mobile com o Flutter, 
-						um SDK desenvolvido pela Google, e mostrar o contínuo crescimento da relevância da tecnologia no mercado, 
-						pois impacta tanto no quesito de desenvolvimento quanto em experiência de usuário.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div>
-				
-				<div class="modal_palestras" id ="ter2">
-					<p class="nome_palestra">Containerização – Um Passo para DevOps</p>
-					<p class="nome_palestrante">Selton</p>
-					<p class="descricao_palestra">
-						Os DevOps auxiliam empresas no gerenciamento de lançamento de novas versões, ao padronizar ambientes 
-						de desenvolvimento. Eles são frequentemente descritos como uma relação mais colaborativa e produtiva 
-						entre equipes de desenvolvimento e operações. A containerização é uma das grandes formas de mudança 
-						nos ambientes e nas entregas de softwares, produtos e funcionalidades.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+        <div class="modal_palestras" id="seg5">
+          <p class="nome_palestra">Sistema de Informação Geográfica em Python com GeoPandas</p>
+          <p class="nome_palestrante">Francisco Carlos Freire Nunes Junior</p>
+          <p class="descricao_palestra">
+            GeoPandas é um projeto open source para facilitar a manipulação de dados geoespaciais em Python.
+            Durante o curso, serão feitas diversas atividades relaciondas a sistemas geográficos, tais como:
+            manipular dados georreferenciados, carregar mapas em estruturas de grafos e calcular o menor
+            caminho numa rede de ruas.
+          </p>
+          <p class="local_palestra">LEC II - Bloco 910</p>
+        </div>
 
-				<div class="modal_palestras" id ="ter3">
-					<p class="nome_palestra">Computação em Nuvem</p>
-					<p class="nome_palestrante">Fernando Antonio Mota Trinta</p>
-					<p class="descricao_palestra">
-						Computação em nuvem é a possibilidade de acessar arquivos e executar diferentes tarefas pela internet, 
-						sem a necessidade de instalar aplicativos no computador. O armazenamento de dados é feito em serviços 
-						on-line, em uma rede.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+        <div class="modal_palestras" id="seg6">
+          <p class="nome_palestra">Firmando os Pés no Novo Mundo Chamado Machine Learning</p>
+          <p class="nome_palestrante">Andreza e Edvar</p>
+          <p class="descricao_palestra">
+            O minicurso visa introduzir os alunos ao fantástico mundo do Machine Learning, por meio
+            da formação de uma base sólida e necessária para melhor entendimento da área.
+          </p>
+          <p class="local_palestra">LEC II - Bloco 910</p>
+        </div>
 
-				<div class="modal_palestras" id ="ter4">
-					<p class="nome_palestra">Uma Breve Visão sobre Akka e seus Atores</p>
-					<p class="nome_palestrante">Lucas Peres Gaspar e Victor Vieira Barros Leal da Silveira</p>
-					<p class="descricao_palestra">
-						O Akka é um kit de ferramentas gratuito e de código aberto que simplifica a construção de aplicativos 
-						simultâneos e distribuídos na JVM. Akka suporta múltiplos modelos de programação para concorrência, mas 
-						enfatiza a simultaneidade baseada em atores, com inspiração tirada de Erlang.
-					</p>
-					<p class="local_palestra">LEC I - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="ter1">
+          <p class="nome_palestra">Flutter - Desenvolvendo hoje o mobile do amanhã</p>
+          <p class="nome_palestrante">CEOS (João Batista, Gabriel Freire, Vinicius Sabariz)</p>
+          <p class="descricao_palestra">
+            A palestra tem como objetivo apresentar ao público o avanço do desenvolvimento mobile com o Flutter,
+            um SDK desenvolvido pela Google, e mostrar o contínuo crescimento da relevância da tecnologia no mercado,
+            pois impacta tanto no quesito de desenvolvimento quanto em experiência de usuário.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id="qua1">
-					<p class="nome_palestra">Blockchain - O Desafio</p>
-					<p class="nome_palestrante">Francisco Ramon Martins Campos</p>
-					<p class="descricao_palestra">
-						A palestra tem como objetivo apresentar o que é a Blockchain, onde surgiu esse conceito e por quê 
-						ela tenta resolver um problema bem conhecido em sistemas distribuídos.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div>
-				
-				<div class="modal_palestras" id ="qua2">
-					<p class="nome_palestra">Como ser um desenvolvedor Android em 2019</p>
-					<p class="nome_palestrante">Levi Moreira de Albuquerque e David Sanford</p>
-					<p class="descricao_palestra">
-						A palestra tem como objetivo apresentar um pouco dos pontos das mudanças mais importantes dos últimos anos 
-						no desenvolvimento Android, bem como destacar ferramentas e tecnologias que um desenvolvedor Android deve 
-						dominar em 2019. A oportunidade é ideal tanto para quem já inciou na área e está querendo saber no que deve 
-						focar, como também para quem está pensando em entrar no mundo Android e ainda não sabe por onde começar. 
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+        <div class="modal_palestras" id="ter2">
+          <p class="nome_palestra">Containerização – Um Passo para DevOps</p>
+          <p class="nome_palestrante">Selton</p>
+          <p class="descricao_palestra">
+            Os DevOps auxiliam empresas no gerenciamento de lançamento de novas versões, ao padronizar ambientes
+            de desenvolvimento. Eles são frequentemente descritos como uma relação mais colaborativa e produtiva
+            entre equipes de desenvolvimento e operações. A containerização é uma das grandes formas de mudança
+            nos ambientes e nas entregas de softwares, produtos e funcionalidades.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id ="qua3">
-					<p class="nome_palestra">Um Vírus em Pokémon Red/Blue</p>
-					<p class="nome_palestrante">Daniel Augusto Ramos Macedo Antunes de Souza</p>
-					<p class="descricao_palestra">
-						Um tour pelo primeiro virus nativo para Game Boy. Escrito e executado direto no próprio Game Boy, ele infecta 
-						o cartucho de todos que tentam trocar Pokémon com um Game Boy infectado.
-					</p>
-					<p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
-				</div> 
+        <div class="modal_palestras" id="ter3">
+          <p class="nome_palestra">Computação em Nuvem</p>
+          <p class="nome_palestrante">Fernando Antonio Mota Trinta</p>
+          <p class="descricao_palestra">
+            Computação em nuvem é a possibilidade de acessar arquivos e executar diferentes tarefas pela internet,
+            sem a necessidade de instalar aplicativos no computador. O armazenamento de dados é feito em serviços
+            on-line, em uma rede.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id ="qua4">
-					<p class="nome_palestra">Internet of Things</p>
-					<p class="nome_palestrante">Lucas Willamy Soares Lessa</p>
-					<p class="descricao_palestra">
-						Internet das coisas é um conceito que se refere à interconexão digital de objetos cotidianos com a internet.
-						Durante o workshop, serão feitas atividades com NodeMCU como servidor, gerando interfaces por meio de diferentes 
-						protocolos de comunicação.
-					</p>
-					<p class="local_palestra">LEC I - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="ter4">
+          <p class="nome_palestra">Uma Breve Visão sobre Akka e seus Atores</p>
+          <p class="nome_palestrante">Lucas Peres Gaspar e Victor Vieira Barros Leal da Silveira</p>
+          <p class="descricao_palestra">
+            O Akka é um kit de ferramentas gratuito e de código aberto que simplifica a construção de aplicativos
+            simultâneos e distribuídos na JVM. Akka suporta múltiplos modelos de programação para concorrência, mas
+            enfatiza a simultaneidade baseada em atores, com inspiração tirada de Erlang.
+          </p>
+          <p class="local_palestra">LEC I - Bloco 910</p>
+        </div>
 
-				<div class="modal_palestras" id="sex1">
-					<p class="nome_palestra">Sex-Palestra1</p>
-					<p class="nome_palestrante">Sex-Palestrante1</p>
-					<p class="descricao_palestra">Sex-Descrição1</p>
-					<p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
-				</div>
-				
-				<div class="modal_palestras" id ="sex2">
-					<p class="nome_palestra">BTG Pactual</p>
-					<p class="nome_palestrante">Felipe Guelfi</p>
-					<p class="descricao_palestra">Sex-Descrição2</p>
-					<p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="qua1">
+          <p class="nome_palestra">Blockchain - O Desafio</p>
+          <p class="nome_palestrante">Francisco Ramon Martins Campos</p>
+          <p class="descricao_palestra">
+            A palestra tem como objetivo apresentar o que é a Blockchain, onde surgiu esse conceito e por quê
+            ela tenta resolver um problema bem conhecido em sistemas distribuídos.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-				<div class="modal_palestras" id ="sex3">
-					<p class="nome_palestra">Data Scientist: A Profissão Mais Sexy do Momento</p>
-					<p class="nome_palestrante">Ananda Lima Freire e Edson Cavalcanti Neto</p>
-					<p class="descricao_palestra">
-						Data Science é o estudo disciplinado dos dados e informações inerentes ao negócio e todas as visões que podem 
-						cercar um determinado assunto. É uma ciência que estuda as informações, seu processo de captura, transformação, 
-						geração e, posteriormente, análise de dados. 
-					</p>
-					<p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
-				</div> 
+        <div class="modal_palestras" id="qua2">
+          <p class="nome_palestra">Como ser um desenvolvedor Android em 2019</p>
+          <p class="nome_palestrante">Levi Moreira de Albuquerque e David Sanford</p>
+          <p class="descricao_palestra">
+            A palestra tem como objetivo apresentar um pouco dos pontos das mudanças mais importantes dos últimos anos
+            no desenvolvimento Android, bem como destacar ferramentas e tecnologias que um desenvolvedor Android deve
+            dominar em 2019. A oportunidade é ideal tanto para quem já inciou na área e está querendo saber no que deve
+            focar, como também para quem está pensando em entrar no mundo Android e ainda não sabe por onde começar.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
 
-			</div>
-		</div>
-	</div>
-	
-	<section class="patrocinio sac-section">
-		<h2>PATROCÍNIO</h2>
-		<div>
-			<a href="https://www.atlantico.com.br/"><img src="img/logo-atlantico.png"></a>
-			<a href="https://www.autocorerobotica.com.br/"><img src="img/logo-autocore.png"></a>
-		</div>
-		<h2>PARCEIROS</h2>
-		<div class='parceiros'>
-			<a href="#"><img src="img/CEOS_Logo.png"></a>
-		</div>
-	</section>
+        <div class="modal_palestras" id="qua3">
+          <p class="nome_palestra">Um Vírus em Pokémon Red/Blue</p>
+          <p class="nome_palestrante">Daniel Augusto Ramos Macedo Antunes de Souza</p>
+          <p class="descricao_palestra">
+            Um tour pelo primeiro virus nativo para Game Boy. Escrito e executado direto no próprio Game Boy, ele
+            infecta
+            o cartucho de todos que tentam trocar Pokémon com um Game Boy infectado.
+          </p>
+          <p class="local_palestra">Auditório do Centro de Ciências - Bloco 902</p>
+        </div>
+
+        <div class="modal_palestras" id="qua4">
+          <p class="nome_palestra">Internet of Things</p>
+          <p class="nome_palestrante">Lucas Willamy Soares Lessa</p>
+          <p class="descricao_palestra">
+            Internet das coisas é um conceito que se refere à interconexão digital de objetos cotidianos com a internet.
+            Durante o workshop, serão feitas atividades com NodeMCU como servidor, gerando interfaces por meio de
+            diferentes
+            protocolos de comunicação.
+          </p>
+          <p class="local_palestra">LEC I - Bloco 910</p>
+        </div>
+
+        <div class="modal_palestras" id="sex1">
+          <p class="nome_palestra">Sex-Palestra1</p>
+          <p class="nome_palestrante">Sex-Palestrante1</p>
+          <p class="descricao_palestra">Sex-Descrição1</p>
+          <p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
+        </div>
+
+        <div class="modal_palestras" id="sex2">
+          <p class="nome_palestra">BTG Pactual</p>
+          <p class="nome_palestrante">Felipe Guelfi</p>
+          <p class="descricao_palestra">Sex-Descrição2</p>
+          <p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
+        </div>
+
+        <div class="modal_palestras" id="sex3">
+          <p class="nome_palestra">Data Scientist: A Profissão Mais Sexy do Momento</p>
+          <p class="nome_palestrante">Ananda Lima Freire e Edson Cavalcanti Neto</p>
+          <p class="descricao_palestra">
+            Data Science é o estudo disciplinado dos dados e informações inerentes ao negócio e todas as visões que
+            podem
+            cercar um determinado assunto. É uma ciência que estuda as informações, seu processo de captura,
+            transformação,
+            geração e, posteriormente, análise de dados.
+          </p>
+          <p class="local_palestra">Auditório do Departamento de Computação - Bloco 910</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="patrocinio sac-section">
+    <h2>PATROCÍNIO</h2>
+    <div>
+      <a href="https://www.atlantico.com.br/"><img src="img/logo-atlantico.png"></a>
+      <a href="https://www.autocorerobotica.com.br/"><img src="img/logo-autocore.png"></a>
+    </div>
+    <h2>PARCEIROS</h2>
+    <div class='parceiros'>
+      <a href="#"><img src="img/CEOS_Logo.png"></a>
+    </div>
+  </section>
 
 
-	<a name="mapaSAC"></a>
-	<section class="mapaSAC sac-section">
-		<h2>MAPA DA SAC</h2>
-		<div id="mapa"></div>
-	</section>
-	
+  <a name="mapaSAC"></a>
+  <section class="mapaSAC sac-section">
+    <h2>MAPA DA SAC</h2>
+    <div id="mapa"></div>
+  </section>
 
-	<footer>
-		<div>
-			<h4>Realização</h4>
-			<a href="http://www.petcomp.ufc.br/"><img class="PET-LOGO" src="img/footer/logo-pet.png" /></a>
-		</div>
 
-		<div>
-			<h4>Redes Sociais</h4>
-			<ul class="linksSocial">
-				<li><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/PETCompUFC/">FACEBOOK</a></li>
-				<li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/petcompufc/">INSTAGRAM</a></li>
-				<li><i class="far fa-envelope"></i> <a href="mailto:petcomp@ufc.br">EMAIL</a></li>
-				<li><i class="fas fa-globe-africa"></i> <a href="http://www.petcomp.ufc.br/">SITE</a></li>
-			</ul>
-		</div>
+  <footer>
+    <div>
+      <h4>Realização</h4>
+      <a href="http://www.petcomp.ufc.br/"><img class="PET-LOGO" src="img/footer/logo-pet.png" /></a>
+    </div>
 
-		<div class="endereco">
-			<h4>Endereço</h4>
-			<p><strong>PET Computação UFC</strong><br />
-				Av. Humberto Monte, s/n<br />
-				Univ. Federal do Ceará</br>
-				Campus do Pici<br />
-				Bloco 910<br />
-				Departamento de Computação </p>
-		</div>
+    <div>
+      <h4>Redes Sociais</h4>
+      <ul class="linksSocial">
+        <li><i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/PETCompUFC/">FACEBOOK</a></li>
+        <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/petcompufc/">INSTAGRAM</a></li>
+        <li><i class="far fa-envelope"></i> <a href="mailto:petcomp@ufc.br">EMAIL</a></li>
+        <li><i class="fas fa-globe-africa"></i> <a href="http://www.petcomp.ufc.br/">SITE</a></li>
+      </ul>
+    </div>
 
-		<div>
-			<h4>Apoio Institucional</h4>
-			<div class="Apoio">
-				<a href="http://portal.dc.ufc.br/"><img src="img/footer/logo-dc.png" /></a>
-				<a href="http://www.ufc.br/"><img src="img/footer/logo-ufc.png"></a>
-			</div>
-		</div>
-	</footer>
+    <div class="endereco">
+      <h4>Endereço</h4>
+      <p><strong>PET Computação UFC</strong><br />
+        Av. Humberto Monte, s/n<br />
+        Univ. Federal do Ceará</br>
+        Campus do Pici<br />
+        Bloco 910<br />
+        Departamento de Computação </p>
+    </div>
 
-	<section class="copyright">
-		<p>© 2019. XIV Semana Acadêmica da Computação / 
-			<a href="http://www.petcomp.ufc.br/">PET Computação UFC</a>
-		</p>
-	</section>
+    <div>
+      <h4>Apoio Institucional</h4>
+      <div class="Apoio">
+        <a href="http://portal.dc.ufc.br/"><img src="img/footer/logo-dc.png" /></a>
+        <a href="http://www.ufc.br/"><img src="img/footer/logo-ufc.png"></a>
+      </div>
+    </div>
+  </footer>
 
- 	<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  <section class="copyright">
+    <p>© 2019. XIV Semana Acadêmica da Computação /
+      <a href="http://www.petcomp.ufc.br/">PET Computação UFC</a>
+    </p>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
     integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-	crossorigin=""></script>
-	<script type="text/javascript" src="js/mapa.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src='js/programacao.js'></script>
+    crossorigin=""></script>
+  <script type="text/javascript" src="js/mapa.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src='js/programacao.js'></script>
 </body>
 
 </html>
