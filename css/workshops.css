@@ -5,7 +5,7 @@
   background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  height: 600px;
+  height: auto;
 }
 
 .workshops h2 {
@@ -46,22 +46,15 @@
 
 
 .workshops-items p {
-  width: 150px;
+  width: 200px;
+  height: 70px;
   transition: all 0.5s;
   color: #fff;
-}
-
-.names li{
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  transition: .5s ease;
-  list-style: none;
-  max-width: 150px;
+  position: relative;
 }
 
 .division {
-  width: 400px;
+  width: 600px;
   margin: 20px auto;
   border-bottom: 3px solid #fdb122;
   border-radius: 25px;
@@ -74,6 +67,94 @@
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 20px;
+  
+}
+
+/* Fim Workshops */
+@media screen and (max-width: 700px) {
+
+  .workshops {
+    height: auto;
+    width: auto;
+  }
+
+  .workshops-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    color: #fff;
+    grid-row-gap: 5vh;
+    padding-bottom: 6vh;
+  }
+
+  .workshops-items p{
+    width: 40vw;
+    max-height: 5vh;
+    font-size: 2.4vh; 
+  }
+
+  .workshops-items section {
+    border-radius: 0%;
+  }
+
+  .workshops-items section:hover {
+    border-style: solid;
+    border-width: .6vh;
+    border-color: #fff;
+  }
+
+
+  #title {
+    font-size: 1.7em;
+    padding:  auto;
+  }
+
+  .division {
+    width: 40vh;
+    border-bottom: .5vh solid #fdb122;
+  }
+
+  .description {
+    font-size:  1.4em;
+    text-align: justify;
+    padding:  0vh 4vh 2vh 4vh;
+  }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .workshops-items section {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: rgb(253, 177, 34);
+    background: url('computer.svg') #fdb122 no-repeat;
+    background-size: 70%;
+    background-position: center;
+    transition: transform 1s ease;
+    border-radius: 0%;
+  }
+
+  .workshops-items p {
+    width: 100px;
+    height: 70px;
+    transition: all 0.5s;
+    color: #fff;
+    position: relative;
+  }
+
+  .workshops-items section:hover {
+    border-style: solid;
+    border-width: .6vh;
+    border-color: #fff;
+  }
+  .workshops {
+    height: auto;
+    width: auto;
+  }
 }
 
 /* Fim Workshops */
