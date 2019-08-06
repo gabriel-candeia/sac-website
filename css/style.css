@@ -189,6 +189,7 @@ body{
 #mapa{
   height: 400px;
   margin: 0px 20px;
+  z-index: 1;
 }
 
 /*Fim do Itens da SAC*/
